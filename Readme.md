@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ирина Милюква](https://up.htmlacademy.ru/adaptive/19/user/1272253).
-* Наставник: `Неизвестно`.
+* Студент: [Ирина Милюкова](https://up.htmlacademy.ru/adaptive/19/user/1272253).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/id208340).
 
 ---
 
