@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
-        <button class="main-nav__menu-close" type="button"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item__item--active">
+          <ul class="main-nav__list">
+            <li class="site-list__item site-list__item--active">
               <a>Главная</a>
             </li>
             <li class="site-list__item">
@@ -31,80 +31,72 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="title">
+      <section class="welcome">
         <img src="img/intro-welcome.svg" width="320" height="390" alt="Заставка Седоны">
-        <div class="title__mask"></div>
+        <div class="welcome__mask"></div>
       </section>
       <section class="about">
-        <h2 class="about__title-slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="about__title-text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньен!</p>
+        <h2 class="about__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="about__text">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньен!</p>
       </section>
       <section class="reason">
         <h2 class="visually-hidden">Список причин</h2>
-        <ol class="reasons__list">
+        <ol class="reason__list">
           <li class="reason__item">
-            <div class="edge edge--blue">
-              <h3 class="edge__title"></h3>
+            <div class="edge">
+              <h3 class="title  title--white  edge__title">Настоящий городок</h3>
               <p class="edge__number">&mdash; №1 &mdash;</p>
               <p class="edge__desc">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="reason__image" src="img/flag.jpg" width="320" height="261" alt="Фото Седоны">
           </li>
           <li>
-            <div class="edge edge--white">
-              <h2 class="visually-hidden">Сервис Седоны</h2>
-              <ul class="reasons__list">
-                <li class="reason__item reason__item--home" aria-label="Иконка домика">
-                  <p class="edge__title">Жильё</p>
-                  <p class="edge__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="reason__item reason__item--souvenir" aria-label="Иконка сувенира">
-                  <p class="edge__title">Сувениры</p>
-                  <p class="edge__desc">Не только китайского, но и местного производства</p>
-                </li>
-                <li class="reason__item reason__item--eat" aria-label="Иконка бургера">
-                  <p class="edge__title">Еда</p>
-                  <p class="edge__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-              </ul>
+            <h2 class="visually-hidden">Сервис Седоны</h2>
+            <ul class="town-edge">
+              <li class="town-edge__item town-edge__item--home" aria-label="Иконка домика">
+                <p class="title  title--left  town-edge__title">Жильё</p>
+                <p class="town-edge__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="town-edge__item town-edge__item--souvenir" aria-label="Иконка сувенира">
+                <p class="title  title--left  town-edge__title">Сувениры</p>
+                <p class="town-edge__desc">Не только китайского, но и местного производства</p>
+              </li>
+              <li class="town-edge__item town-edge__item--eat" aria-label="Иконка бургера">
+                <p class="title  title--left  town-edge__title">Еда</p>
+                <p class="town-edge__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="reason__item">
+            <div class="edge">
+              <h3 class="title  title--white  edge__title">Там есть мост дьявола</h3>
+              <p class="edge__number">&mdash; №2 &mdash;</p>
+              <p class="edge__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <li class="reason__item">
-              <div class="edge edge--blue">
-                <h3 class="edge__title">Там есть мост дьявола</h3>
-                <p class="edge__number">&mdash; №2 &mdash;</p>
-                <p class="edge__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-              <img class="reason__image" src="img/flag.jpg" width="320" height="261" alt="Фото Моста Дьявола">
-            </li>
-            <li class="reason__item">
-              <div class="edge edge--white">
-                <h3 class="edge__title">Небольшая площадь</h3>
-                <p class="edge__number">&mdash; №3 &mdash;</p>
-                <p class="edge__desc">Все достопримечательности находятся очень близко</p>
-              </div>
-            </li>
-            <li class="reason__item">
-              <div class="edge edge--white">
-                <h3 class="edge__title">Красивая дорога</h3>
-                <p class="edge__number">&mdash; №4 &mdash;</p>
-                <p class="edge__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="reason__item">
-              <div class="edge edge--white">
-                <h3 class="edge__title">Мало туристов</h3>
-                <p class="edge__number">&mdash; №5 &mdash;</p>
-                <p class="edge__desc">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
+            <img class="reason__image" src="img/flag.jpg" width="320" height="261" alt="Фото Моста Дьявола">
+          </li>
+          <li class="edge  edge--silver reason__item">
+            <h3 class="edge__title">Небольшая площадь</h3>
+              <p class="edge__number">&mdash; №3 &mdash;</p>
+              <p class="edge__desc">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="edge  edge--silver reason__item">
+            <h3 class="title  edge__title">Красивая дорога</h3>
+            <p class="edge__number">&mdash; №4 &mdash;</p>
+            <p class="edge__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="edge  edge--silver reason__item">
+            <h3 class="title  edge__title">Мало туристов</h3>
+            <p class="edge__number">&mdash; №5 &mdash;</p>
+            <p class="edge__desc">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
-      <section class="order-question">
-        <div class="order-question__container">
-          <h2 class="order-question__title">Заинтересовались?</h2>
-          <p class="order-question__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="order-question__button" type="button" type="submit">Поиск гостиницы в Седоне</button>
+      <section class="about">
+        <div class="about__container">
+          <h2 class="title  about__title  about__title--big">Заинтересовались?</h2>
+          <p class="about__text  about__title--index">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="btn  about__button" type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="map">
           <h2 class="visually-hidden">Забронировать отель</h2>
@@ -114,25 +106,26 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
-          <p class="page-footer__footer-hashtag">#Visitsedona</p>
-        </div>
-        <div class="page-footer__social social">
+        <p class="page-footer__hashtag">#Visitsedona</p>
+        <div class="social  page-footer__social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Twitter</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtobe" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Youtube</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <b>Разработано:</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="" alt="Иконка HTML Academy">
+          </a>
         </div>
       </div>
     </footer>

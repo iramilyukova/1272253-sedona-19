@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
-        <button class="main-nav__menu-close" type="button"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item__item--active">
-              <a href="index.html"></a>
+          <ul class="main-nav__list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>Форма отзыва</a>
             </li>
             <li class="site-list__item">
@@ -31,113 +31,38 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="title">
+      <section class="welcome">
         <img src="img/intro-welcome.svg" width="320" height="160" alt="Заставка Седоны">
-        <div class="title__mask"></div>
+        <div class="welcome__mask"></div>
       </section>
-      <section class="about-foto">
-        <h2 class="about-foto__title">Оставьте свой отзыв</h2>
-        <p class="about-foto__title-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="about">
+        <h2 class="title  about__title">Оставьте свой отзыв</h2>
+        <p class="about__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-      <div class="form__wrapper">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <section>
-            <h2 class="form__header form__header--name">Представьтесь</h2>
-            <p class="form__name">
-              <label class="form__title" for="name">Имя:</label>
-              <input class="form__text" type="text" id="name" name="name" placeholder="Петр">
-            </p>
-            <p class="form__surname">
-              <label class="form__title" for="surname">Фамилия:</label>
-              <input class="form__text" type="text" id="surname" name="surname" placeholder="Иванов">
-            </p>
-            <p class="form__patronymic">
-              <label class="form__title" for="patronymic">Отчество:</label>
-              <input class="form__text" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-            </p>
-          </section>
-          <section>
-            <h2 class="form__header form__header--contacts">Контактная информация:</h2>
-            <p class="form__phone">
-              <label class="form__title" for="phone">Контактный телефон*:</label>
-              <input class="form__text" type="text" id="phone" name="phone" placeholder="Введите телефон">
-              <button class="form__button form__button--phone" type="button" aria-label="Введите номер своего телефона">
-            </p>
-            <p class="form__mail">
-              <label class="form__title" for="e-mail">Электронная почта*:</label>
-              <input class="form__text" type="text" id="e-mail" name="e-mail" placeholder="Введите e-mail">
-              <button class="form__button form__button--e-mail" type="button" aria-label="Введите номер своего телефона">
-            </p>
-          </section>
-          <section>
-            <h2 class="form__header form__header--opinion">Ваше общее впечатление:</h2>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="form__item form__item--radio" type="radio" id="positive" name="positive" checked>
-                <label for="positive">Скорее положительное</label>
-              </li>
-              <li class="form__item">
-                <input class="form__item form__item--radio" type="radio" id="negative" name="negative">
-                <label for="negative">Скорее отрицательное</label>
-              </li>
-              <li class="form__item">
-                <input class="form__item form__item--radio" type="radio" id="difficult" name="difficulte">
-                <label for="difficult">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2 class="form__header form__header--place">Посещенные достопримечательности:</h2>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="form__item form__item--checkbox" type="checkbox" id="bridge" name="bridge" checked>
-                <label for="bridge">Мост Дьявола</label>
-              </li>
-              <li class="form__item">
-                <input class="form__item form__item--checkbox" type="checkbox" id="mount" name="mount" checked>
-                <label for="mount">Гора-Колокол</label>
-              </li>
-              <li class="form__item">
-                <input class="form__item form__item--checkbox" type="checkbox" id="park" name="park" checked>
-                <label for="park">Слайд-парк</label>
-              </li>
-              <li class="form__item">
-                <input class="form__item form__item--checkbox" type="checkbox" id="rocks" name="rocks">
-                <label for="rocks">Красные скалы</label>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2 class="form__header form__header--emotion">Опишите свои эмоции</h2>
-            <p class="form__emotion">
-              <textarea class="form__textarea" name="text" rows="10" cols="45" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
-            </p>
-            <button class="form__button form__button--emotion" type="submit">Отправить отзыв</button>
-          </section>
-        </form>
-      </div>
-    </main>
+          <!--Здесь будет форма!-->
+     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper-form">
-        <div class="page-footer__contacts-form">
-          <p class="page-footer__footer-hashtag">#Visitsedona</p>
-        </div>
-        <div class="page-footer__social social">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__hashtag">#Visitsedona</p>
+        <div class="social  page-footer__social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Twitter</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtobe" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Youtube</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <b>Разработано:</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="" alt="Иконка HTML Academy">
+          </a>
         </div>
       </div>
     </footer>
