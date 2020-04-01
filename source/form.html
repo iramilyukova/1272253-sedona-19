@@ -39,7 +39,83 @@
         <h2 class="title  about__title">Оставьте свой отзыв</h2>
         <p class="about__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
-          <!--Здесь будет форма!-->
+      <div class="form__wrapper">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <section>
+            <h2 class="title  form__header">Представьтесь</h2>
+            <p class="form__name">
+              <label class="form__title" for="name">Имя*:</label>
+              <input class="form__text" type="text" id="name" name="name" required placeholder="Петр">
+            </p>
+            <p class="form__surname">
+              <label class="form__title" for="surname">Фамилия*:</label>
+              <input class="form__text" type="text" id="surname" name="surname" required placeholder="Иванов">
+            </p>
+            <p class="form__patronymic">
+              <label class="form__title" for="patronymic">Отчество:</label>
+              <input class="form__text" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+            </p>
+          </section>
+          <section>
+            <h2 class="title  form__header">Контактная информация:</h2>
+            <p class="form__phone">
+              <label class="form__title" for="phone">Контактный телефон*:</label>
+              <input class="form__text" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
+              <button class="form__button form__button--phone" type="button" aria-label="Введите номер своего телефона">
+            </p>
+            <p class="form__email">
+              <label class="form__title" for="email">Электронная почта*:</label>
+              <input class="form__text" type="email" id="email" name="email" placeholder="Введите email">
+              <button class="form__button form__button--email" type="button" aria-label="Введите номер своей электронной почты">
+            </p>
+          </section>
+          <section>
+            <h2 class="title  form__header">Ваше общее впечатление:</h2>
+            <ul class="form__list">
+              <li class="form__btn">
+                <input class="form__radio" type="radio" id="positive" name="positive" checked>
+                <label for="positive">Скорее положительное</label>
+              </li>
+              <li class="form__btn">
+                <input class="form__radio" type="radio" id="negative" name="negative">
+                <label for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="form__btn">
+                <input class="form__radio" type="radio" id="difficult" name="difficulte">
+                <label for="difficult">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="title form__header">Посещенные достопримечательности:</h2>
+            <ul class="form__list">
+              <li class="form__btn">
+                <input class="form__checkbox" type="checkbox" id="bridge" name="bridge" checked>
+                <label for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="form__btn">
+                <input class="form__item form__item--checkbox" type="checkbox" id="mount" name="mount" checked>
+                <label for="mount">Гора-Колокол</label>
+              </li>
+              <li class="form__btn">
+                <input class="form__item form__item--checkbox" type="checkbox" id="park" name="park" checked>
+                <label for="park">Слайд-парк</label>
+              </li>
+              <li class="form__btn">
+                <input class="form__item form__item--checkbox" type="checkbox" id="rocks" name="rocks">
+                <label for="rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </section>
+          <section class="emotion">
+            <h2 class="title  emotion__title  emotion__title--big">Опишите свои эмоции</h2>
+            <p class="emotion__text">
+              <textarea class="emotion__textarea" name="text" rows="10" cols="45" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+            </p>
+            <button class="btn  emotion__button" type="submit">Отправить отзыв</button>
+          </section>
+        </form>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
