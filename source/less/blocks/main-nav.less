@@ -3,16 +3,20 @@
   margin: 0;
 
   &__toggle {
-  background-image: url("../img/icon-menu.svg") no-repeat;
-  }
+    background-color: @color-nav;
+    border: none;
 
-  &__wrapper {
+    &:hover svg {
+      fill: #b3d1e4;
+    }
 
+    &:active svg {
+      fill: #d9e8f1;
+    }
   }
 
   &__white {
     background-color: #fff;
-    padding-bottom: 54px;
   }
 
   &__list {
@@ -33,6 +37,18 @@
    }
 
    &__menu {
-     background-image: url("../../img/icon-menu.svg") no-repeat;
+     border: none;
+     background-color: #fff;
+     padding-top: 17px;
+     padding-bottom: 17px;
+     margin-right: auto;
+
+     &:hover svg {
+       fill: #b3d1e4;
+     }
+
+     &:active svg {
+       fill: #d9e8f1;
+     }
    }
  }
