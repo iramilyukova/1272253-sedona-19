@@ -1,15 +1,12 @@
 .social__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .clear-ul;
   display: flex;
 }
 
 .social__item {
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
-  margin-bottom: 40px;
+  background-color: @blue-50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +17,14 @@
   }
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @blue-150;
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: @blue-120;
   }
 
   &:active path {
-    fill: #88b6d1;
+    fill: @blue-80;
   }
 }

@@ -1,17 +1,19 @@
 .photo {
-.padding();
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .photo__list {
   padding-bottom: 20px;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid @gray-50;
   &--bottom {
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid @gray-50;
   }
 }
 
 .photo__title {
-  .font-size-14;
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
   padding-top: 19px;
   padding-bottom: 15px;
@@ -22,24 +24,35 @@
 }
 
 .photo__author {
-  .font-size-14;
+  font-size: 14px;
+  line-height: 24px;
   padding-bottom: 13px;
   margin: 0;
+  text-transform: lowercase;
 
   &:first-letter {
     text-transform: capitalize;
   }
 }
 
+.photo__author-name {
+  text-transform: capitalize;
+}
+
 .photo__icon {
-  background-image: url("../../img/icon-like.svg");
+  background-image: url("../img/icon-like.svg");
+  width: 23px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  display: inline-block;
 }
 
 .photo__rating {
   margin-bottom: 20px;
+  padding-left: 12px;
   font-weight: 700;
-}
-
-.about__container {
-  .padding();
 }

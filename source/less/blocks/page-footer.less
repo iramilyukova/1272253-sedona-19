@@ -1,10 +1,9 @@
 .page-footer__wrapper {
-  border-color: #fff;
   margin-left: 55px;
 }
 
 .page-footer__hashtag {
-  .font-upper;
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: 700;
   cursor: default;
@@ -18,19 +17,22 @@
 }
 
 .page-footer__copyright {
-  .font-400;
   font-weight: 400;
   padding-top: 2px;
   padding-bottom: 22px;
   cursor: default;
 
   &:hover svg {
-    fill: #81b3d2;
+    fill: @blue-50;
   }
 
   &:active svg {
-    fill: #bdbbbc;
+    fill: @gray-100;
   }
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
 }
 
 .page-footer__text {
@@ -39,4 +41,6 @@
 
 .page-footer__logo {
   margin-left: 18px;
+  display: inline-block;
+  vertical-align: middle;
 }
