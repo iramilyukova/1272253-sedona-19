@@ -19,16 +19,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__text" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>Фото и видео</a>
+              <a class="main-nav__text">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__text" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="main-nav__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
     </header>
     <main class="page-main">
       <section class="welcome">
-        <img src="img/text-sedona.svg" width="320" height="160" alt="Заставка Седоны">
+        <img class="welcome__text--sedona" src="img/text-sedona.svg" width="230" height="38" alt="Заставка Седоны">
       </section>
       <section class="about">
         <h2 class="title  about__title  about__title--photo">Фото и видео</h2>
@@ -111,16 +111,21 @@
         <h2 class="title  about__title">Все еще сомневаетесь?</h2>
         <p class="about__text  about__text--foto">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video">
-          <video class="video__clip" poster="/img/video-mobile@1x.jpg" controls preload="metadata" width="320" height="212">
+          <video class="video__clip" poster="/img/video-mobile@1x.jpg" preload="metadata" width="320" height="212">
             <sourse srs="video.mp4" type="video/mp4">
           </video>
-          <div class="video__scale">
-            <div class="video__range-toggle" aria-label="Ползунок для прокрутки видеоролика"></div>
-          </div>
-          <div class="video__button">
-            <button class="video__arrow" type="button"></button>
-            <button class="video__full-screen" type="button"></button>
-            <button class="video__сс" type="button">cc</button>
+          <div class="video__box">
+            <div class="video__controls">
+              <div class="video__scale">
+                <div class="video__bar"></div>
+              </div>
+              <div class="video__range-toggle" aria-label="Ползунок для прокрутки видеоролика"></div>
+            </div>
+            <div class="video__button">
+              <button class="video__arrow" type="button"></button>
+              <button class="video__full-screen" type="button"></button>
+              <button class="video__сс" type="button">cc</button>
+            </div>
           </div>
         </div>
       </section>
@@ -148,10 +153,11 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Ютуб</span><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                <path fill="#FFF" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-              </svg>
-             </a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Ютуб</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                  <path fill="#FFF" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

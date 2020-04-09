@@ -14,30 +14,31 @@
   padding-left: 20px;
   padding-right: 20px;
   border-top: 1px solid @gray-50;
+
   &--bottom {
     border-bottom: 1px solid @gray-50;
   }
 }
 
 .form__header {
-   padding-top: 25px;
-   padding-bottom: 20px;
- }
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
 
 .form__text {
   font-size: 18px;
   line-height: 26px;
   color: @black-100;
+  background-color: @gray-50;
   font-weight: 700;
+  text-transform: none;
   margin: 0;
   margin-bottom: 20px;
   margin-top: 10px;
   margin-right: 20px;
   margin-left: 13px;
   outline: none;
-  padding-bottom: 18px;
   border: 2px solid transparent;
-  background-color: @gray-50;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 18px;
@@ -49,10 +50,6 @@
 
   &--border {
     margin-bottom: 27px;
-  }
-
-  &:first-letter {
-    text-transform: capitalize;
   }
 
   &:hover {
@@ -113,10 +110,5 @@
   line-height: 26px;
   font-weight: 700;
   display: inline-block;
-  text-transform: lowercase;
-
-  &:first-letter {
-    color: @black-100;
-    text-transform: capitalize;
-  }
+  text-transform: none;
 }

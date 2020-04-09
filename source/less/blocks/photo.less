@@ -6,6 +6,7 @@
 .photo__list {
   padding-bottom: 20px;
   border-top: 1px solid @gray-50;
+
   &--bottom {
     border-bottom: 1px solid @gray-50;
   }
@@ -28,15 +29,11 @@
   line-height: 24px;
   padding-bottom: 13px;
   margin: 0;
-  text-transform: lowercase;
-
-  &:first-letter {
-    text-transform: capitalize;
-  }
+  text-transform: none;
 }
 
 .photo__author-name {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .photo__icon {
@@ -47,7 +44,7 @@
   background-position: center;
   border: none;
   background-color: transparent;
-  padding: 0px;
+  padding: 0;
   display: inline-block;
 }
 
