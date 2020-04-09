@@ -1,0 +1,45 @@
+.town-edge {
+  .clear-ul;
+  padding-bottom: 37px;
+
+  &--wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.town-edge__item {
+  position: relative;
+}
+
+.town-edge__title {
+  padding-top: 35px;
+  padding-left: 53px;
+
+  &--house {
+    &::before {
+      .icon-index();
+      background-image: url("../img/icon-house.svg");
+    }
+  }
+
+  &--gift {
+    &::before {
+      .icon-index();
+      background-image: url("../img/icon-gift.svg");
+    }
+  }
+
+  &--burger {
+    &::before {
+      .icon-index();
+      background-image: url("../img/icon-burger.svg");
+    }
+  }
+}
+
+.town-edge__desc {
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 49px;
+}

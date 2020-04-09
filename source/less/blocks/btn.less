@@ -1,0 +1,30 @@
+.btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  border: none;
+  background-color: @blue-50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 47px;
+  padding-right: 48px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @blue-150;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @blue-120;
+    color: @blue-100;
+  }
+
+  &:disabled {
+    background-color: @gray-150;
+    color: @white;
+  }
+}

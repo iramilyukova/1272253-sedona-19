@@ -1,0 +1,30 @@
+.social__list {
+  .clear-ul;
+  display: flex;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: @blue-50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: @blue-150;
+  }
+
+  &:active {
+    background-color: @blue-120;
+
+    svg {
+      fill: @blue-80;
+    }
+  }
+}

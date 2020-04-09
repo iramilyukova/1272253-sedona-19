@@ -1,0 +1,115 @@
+.main-nav {
+  margin: 0 auto;
+  width: 320px;
+  min-height: 223px;
+  position: relative;
+  background-color: @blue-50;
+}
+
+.main-nav__toggle {
+  padding: 0;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 17px;
+  right: 19px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover svg {
+    fill: @blue-20;
+  }
+
+  &:active svg {
+    fill: @blue-10;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+}
+
+.main-nav__list {
+  color: @blue-50;
+  .clear-ul;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.main-nav__item {
+  color: @white;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: block;
+  border-bottom: 1px solid @blue-160;
+  border-top: 1px solid @blue-30;
+
+  &--top {
+    border-top: none;
+  }
+
+  &--bottom {
+    border-bottom: none;
+  }
+
+  a {
+    color: @white;
+  }
+
+  &:hover {
+    background-color: @blue-150;
+    border-top-color: @blue-150;
+  }
+
+  &:active {
+    background-color: @blue-120;
+    border-top-color: @blue-120;
+
+    a {
+      color: @blue-100;
+    }
+  }
+}
+
+.main-nav__white {
+  position: relative;
+  min-height: 59px;
+  background-color: @white;
+}
+
+.main-nav__menu {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  border: none;
+  background-color: transparent;
+
+  &:hover svg {
+    fill: @blue-20;
+  }
+
+  &:active svg {
+    fill: @blue-10;
+  }
+}
