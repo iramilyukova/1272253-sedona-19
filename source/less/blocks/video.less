@@ -34,7 +34,7 @@
   background-color: @white;
   border: 4px solid @white;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 @black-20;
+  box-shadow: 0 2px 1px 0  @black-20;
   cursor: pointer;
 }
 
@@ -47,6 +47,7 @@
 
 .video__btn {
   display: flex;
+  border: none;
 }
 
 .video__flex {
@@ -60,14 +61,38 @@
 .video__replay {
   .icon-video;
   padding-left: 24px;
+
+  &:hover svg {
+    fill: @black-70;
+  }
+
+  &:active svg {
+    fill: @gray-70;
+  }
 }
 
 .video__fullscreen {
   .icon-video;
   padding-left: 33px;
+
+  &:hover svg {
+    fill: @black-70;
+  }
+
+  &:active svg {
+    fill: @gray-70;
+  }
 }
 
 .video__subtitles {
   .icon-video;
   padding-left: 24px;
+
+  &:hover svg {
+    fill: @black-70;
+  }
+
+  &:active svg {
+    fill: @gray-70;
+  }
 }
