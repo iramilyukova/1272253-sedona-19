@@ -1,4 +1,3 @@
-
 .title {
   text-align: center;
   text-transform: uppercase;
@@ -6,7 +5,8 @@
   line-height: 26px;
   font-weight: 700;
   vertical-align: middle;
-  margin: 0;
+  margin: 0 auto;
+  cursor: default;
 
   &--left {
     text-align: left;
@@ -14,5 +14,32 @@
 
   &--dark {
     color: @black-100;
+  }
+
+  &--big {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-bottom: 33px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    font-size: 21px;
+    line-height: 26px;
+
+    &--left {
+      text-align: center;
+    }
+
+    &--big {
+      font-size: 30px;
+      line-height: 26px;
+      padding-bottom: 40px;
+    }
   }
 }

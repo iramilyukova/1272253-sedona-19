@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -56,55 +58,82 @@
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотографии природы</h2>
-        <div class="photo__list">
-          <a class="photo__image" href="">
-            <img class="photo__src" src="/img/photo-sunset-mobile@1x.jpg">
-          </a>
-          <h2 class="photo__title">Неродные просторы</h2>
-          <p class="photo__author">Автор фото: <span class="photo__author-name">Борис</span></p>
-          <button class="photo__icon" type="button" aria-label="Поставь лайк">
-            <span class="visually-hidden">Ставь лайк</span>
-          </button>
-          <span class="photo__rating">1350</span>
-        </div>
-        <div class="photo__list">
-          <a class="photo__image" href="">
-            <img class="photo__src" src="/img/photo-cactus-mobile@1x.jpg">
-          </a>
-          <h2 class="photo__title">Местная растительность</h2>
-          <p class="photo__author">Автор фото:
-            <span class="photo__author-name">Сергей</span>
-          </p>
-          <button class="photo__icon" type="button" aria-label="Поставь лайк">
-            <span class="visually-hidden">Ставь лайк</span>
-          </button>
-          <span class="photo__rating">143</span>
-        </div>
-        <div class="photo__list">
-          <a class="photo__image" href="">
-            <img class="photo__src" src="/img/photo-roads-mobile@1x.jpg">
-          </a>
-          <h2 class="photo__title">Дорога на север</h2>
-          <p class="photo__author">Автор фото:
-            <span class="photo__author-name">Петр</span>
-          </p>
-          <button class="photo__icon" type="button" aria-label="Поставь лайк">
-            <span class="visually-hidden">Ставь лайк</span>
-          </button>
-          <span class="photo__rating">96</span>
-        </div>
-        <div class="photo__list  photo__list--bottom">
-          <a class="photo__image" href="">
-            <img class="photo__src" src="/img/photo-bridge-mobile@1x.jpg">
-          </a>
-          <h2 class="photo__title">Мост Дьявола</h2>
-          <p class="photo__author">Автор фото:
-            <span class="photo__author-name">Антон</span>
-          </p>
-          <button class="photo__icon" type="button" aria-label="Поставь лайк">
-            <span class="visually-hidden">Ставь лайк</span>
-          </button>
-          <span class="photo__rating">254</span>
+        <div class="photo__wrapper">
+          <div class="photo__item">
+            <a class="photo__image" href="">
+              <img class="photo__src" src="/img/photo-sunset-mobile@1x.jpg">
+            </a>
+            <div class="photo__contener">
+              <div class="photo__flex">
+                <h2 class="photo__title">Неродные просторы</h2>
+                <p class="photo__author">Автор фото: <span class="photo__author-name">Борис</span></p>
+              </div>
+              <div class="photo__box">
+                <button class="photo__icon" type="button" aria-label="Поставь лайк">
+                  <span class="visually-hidden">Ставь лайк</span>
+                </button>
+                <span class="photo__rating">1350</span>
+              </div>
+            </div>
+          </div>
+            <div class="photo__item">
+              <a class="photo__image" href="">
+                <img class="photo__src" src="/img/photo-cactus-mobile@1x.jpg">
+              </a>
+              <div class="photo__contener">
+                <div class="photo__flex">
+                  <h2 class="photo__title">Местная растительность</h2>
+                  <p class="photo__author">Автор фото:
+                    <span class="photo__author-name">Сергей</span>
+                  </p>
+                </div>
+                <div class="photo__box">
+                  <button class="photo__icon" type="button" aria-label="Поставь лайк">
+                    <span class="visually-hidden">Ставь лайк</span>
+                  </button>
+                  <span class="photo__rating">143</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__item">
+              <a class="photo__image" href="">
+                <img class="photo__src" src="/img/photo-roads-mobile@1x.jpg">
+              </a>
+              <div class="photo__contener  photo__contener--grey">
+                <div class="photo__flex">
+                  <h2 class="photo__title">Дорога на север</h2>
+                  <p class="photo__author">Автор фото:
+                    <span class="photo__author-name">Петр</span>
+                  </p>
+                </div>
+                <div class="photo__box">
+                  <button class="photo__icon" type="button" aria-label="Поставь лайк">
+                    <span class="visually-hidden">Ставь лайк</span>
+                  </button>
+                  <span class="photo__rating">96</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__item  photo__item--bottom">
+              <a class="photo__image" href="">
+                <img class="photo__src" src="/img/photo-bridge-mobile@1x.jpg">
+              </a>
+              <div class="photo__contener">
+                <div class="photo__flex">
+                  <h2 class="photo__title">Мост Дьявола</h2>
+                  <p class="photo__author">Автор фото:
+                    <span class="photo__author-name">Антон</span>
+                  </p>
+                </div>
+                <div class="photo__box">
+                  <button class="photo__icon" type="button" aria-label="Поставь лайк">
+                    <span class="visually-hidden">Ставь лайк</span>
+                  </button>
+                  <span class="photo__rating">254</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about">

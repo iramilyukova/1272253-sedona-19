@@ -1,5 +1,14 @@
+.reason {
+  width: 320px;
+  margin: 0 auto;
+
+  /* Временно для сетки*/
+  min-height: 1838px;
+}
+
 .reason__list {
   .clear-ul;
+  width: 100%;
 }
 
 .reason__item {
@@ -7,8 +16,31 @@
   width: 100%;
   cursor: default;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reason__image {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    width: 768px;
+    /* Временно для сетки */
+    min-height: 0;
+  }
+
+  .reason__item {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    width: 1200px;
+    /* Временно для сетки*/
+    min-height: 1099px;
+  }
 }

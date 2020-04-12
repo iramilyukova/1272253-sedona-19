@@ -3,9 +3,12 @@
   text-align: center;
   margin: 0 auto;
   cursor: default;
+  color: @white;
 
-  &--silver {
-    background-color: @gray-120;
+  &--white {
+    min-width: 320px;
+    /* Временно для сетки*/
+    min-height: 208px;
   }
 }
 
@@ -13,28 +16,50 @@
   color: @white;
   margin: 0;
   padding-top: 43px;
-
-  &--dark {
-    color: @black-100;
-  }
 }
 
 .edge__number {
+  display: block;
+  margin: 0;
   margin-top: 15px;
   margin-bottom: 20px;
   color: @white;
-
-  &--dark {
-    color: @black-100;
-  }
 }
 
 .edge__desc {
   padding-bottom: 43px;
   margin: 0;
+  width: 75%;
+  padding-left: 25px;
   color: @white;
+}
 
-  &--dark {
-    color: @black-100;
+@media (min-width: @tablet-width) {
+  .edge--white {
+    min-width: 255px;
+    /* Временно для сетки*/
+    min-height: 257px;
+  }
+
+  .edge--silver {
+    background-color: @gray-120;
+    min-width: 255px;
+    /* Временно для сетки*/
+    min-height: 257px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .edge--white {
+    min-width: 400px;
+    /* Временно для сетки*/
+    min-height: 256px;
+  }
+
+  .edge--silver {
+    background-color: @gray-120;
+    min-width: 400px;
+    /* Временно для сетки*/
+    min-height: 256px;
   }
 }

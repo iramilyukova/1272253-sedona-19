@@ -10,11 +10,14 @@
 
 .town-edge__item {
   position: relative;
+  padding-left: 53px;
+  padding-bottom: 43px;
+  padding-top: 35px;
 }
 
 .town-edge__title {
-  padding-top: 35px;
-  padding-left: 53px;
+  // padding-top: 35px;
+  // padding-left: 53px;
 
   &--house {
     &::before {
@@ -41,5 +44,59 @@
 .town-edge__desc {
   margin: 0;
   padding-top: 35px;
-  padding-left: 49px;
+  // padding-left: 49px;
+  // padding-bottom: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .town-edge {
+    width: auto;
+    margin: 0;
+    min-width: 256px;
+    /* Временно для сетки*/
+    min-height: 332px;
+
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .town-edge__item {
+    flex-basis: 33.33%;
+    text-align: center;
+    padding-top: 163px;
+    padding-left: 0;
+    padding-bottom: 66px;
+    width: 256px;
+  }
+
+  .town-edge__title {
+    &--house {
+      &::before {
+        .icon-index-table();
+      }
+    }
+
+    &--gift {
+      &::before {
+        .icon-index-table();
+      }
+    }
+
+    &--burger {
+      &::before {
+        .icon-index-table();
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .town-edge {
+    min-width: 400px;
+  }
 }

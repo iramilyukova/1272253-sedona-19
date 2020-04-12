@@ -1,29 +1,42 @@
+.about {
+  min-width: 320px;
+  /* Временно для сетки */
+  min-height: 240px;
+}
+
+.about--btn {
+  margin: 0 auto;
+  padding: 0;
+  /* Временно для сетки */
+  min-height: 287px;
+}
+
 .about__title {
   padding-top: 38px;
   padding-bottom: 40px;
-  margin: 0;
-
-  &--big {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
-    padding-top: 34px;
-  }
+  margin: 0 auto;
 }
 
 .about__container {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  min-width: 320px;
+  padding-top: 35px;
+  padding-bottom: 48px;
 }
 
 .about__text {
   margin: 0;
   text-align: center;
-  padding-bottom: 40px;
+  padding: 0 40px 40px 40px;
+
+  &--reasons {
+    margin: 0 auto;
+    width: 77%;
+    padding-bottom: 33px;
+  }
 
   &--photo {
+    margin: 0 auto;
     padding-bottom: 30px;
     margin-top: 0;
   }
@@ -31,4 +44,83 @@
 
 .about__button {
   display: inline-block;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    margin: 0 auto;
+    /* Временно для сетки */
+    min-height: 208px;
+  }
+
+  .about__container {
+    margin: 0;
+    min-width: 768px;
+    padding-top: 48px;
+    padding-bottom: 58px;
+  }
+
+  .about--btn {
+    margin: 0 auto;
+    text-align: center;
+    /* Временно для сетки */
+    min-height: 335px;
+  }
+
+  .about__title--big {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 34px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .about__text--btn {
+    margin: 0 auto;
+    width: 439px;
+    padding-bottom: 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    /* Временно для сетки */
+    min-height: 208px;
+  }
+
+  .about__container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 66px;
+  }
+
+  .about--btn {
+    /* Временно для сетки */
+    min-height: 319px;
+  }
+
+  .about__title {
+    margin: 0 auto;
+    padding-top: 68px;
+    padding-bottom: 39px;
+
+    &--big {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 0;
+      padding-top: 58px;
+    }
+  }
+
+  .about__text--reasons {
+    padding-bottom: 55px;
+  }
+
+  .about__text--btn {
+    min-width: 435px;
+    padding-bottom: 55px;
+  }
 }
