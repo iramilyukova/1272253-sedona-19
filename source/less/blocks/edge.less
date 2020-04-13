@@ -3,13 +3,13 @@
   text-align: center;
   cursor: default;
   color: @white;
-  padding-bottom: 40px;
+  padding-top: 58px;
+  padding-bottom: 45px;
 }
 
 .edge__title {
   color: @white;
   margin: 0;
-  padding-top: 43px;
 }
 
 .edge__number {
@@ -22,5 +22,36 @@
 
 .edge__desc {
   color: @white;
-  margin: 0;
+  margin: 0 auto;
+  width: 86%;
+
+  &--whidth {
+    margin: 0 auto;
+    width: 67%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .edge {
+    padding-top: 115px;
+    padding-bottom: 70px;
+  }
+
+  .edge__desc {
+    color: @white;
+    margin: 0 auto;
+    width: 70%;
+
+    &--whidth {
+      margin: 0 auto;
+      width: 56%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .edge {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
 }

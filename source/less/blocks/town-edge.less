@@ -5,14 +5,19 @@
   &--wrapper {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0;
   }
 }
 
 .town-edge__item {
   position: relative;
   padding-left: 53px;
-  padding-bottom: 43px;
-  padding-top: 35px;
+  padding-top: 37px;
+  padding-bottom: 0;
+
+  &:nth-child(3) {
+    padding-bottom: 40px;
+  }
 }
 
 .town-edge__title--house {
@@ -37,8 +42,9 @@
 }
 
 .town-edge__desc {
-  margin: 0;
-  padding-top: 35px;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,6 +67,14 @@
     padding-top: 163px;
     padding-left: 0;
     padding-bottom: 66px;
+
+    &:nth-child(3) {
+      padding-bottom: 0;
+    }
+  }
+
+  .town-edge__item--order {
+    order: 1;
   }
 
   .town-edge__title {
@@ -80,6 +94,25 @@
       &::before {
         .icon-index-table();
       }
+    }
+  }
+
+  .town-edge__desc {
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .town-edge__desc {
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 35px;
+
+    &--position {
+      margin: 0 auto;
+      width: 49%;
     }
   }
 }

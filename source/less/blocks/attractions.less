@@ -1,6 +1,7 @@
 .attractions {
   .clear-ul;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .attractions--wrapper {
@@ -11,33 +12,80 @@
 
 .attractions__item {
   padding-top: 43px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid @gray-80;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 .attractions__title {
   color: @black-100;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 20px;
 }
 
 .attractions__number {
   display: block;
   padding-bottom: 20px;
-  padding-left: 25px;
+  padding-left: 0;
   color: @black-100;
   margin: 0;
-  width: 75%;
+}
+
+.attractions__desc {
+  margin: 0 auto;
+  width: 77%;
 }
 
 @media (min-width: @tablet-width) {
+  .attractions--wrapper {
+    padding: 0;
+  }
+
   .attractions__item {
     flex-basis: 33.33%;
     text-align: center;
-    padding-top: 50px;
     padding-left: 0;
-    padding-bottom: 50px;
+    border-bottom: none;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+
+  .attractions__title {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .attractions__number {
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+
+  .attractions__desc {
+    margin: 0 auto;
+    width: 68%;
+
+    &--position {
+      margin: 0 auto;
+      width: 55%;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .attractions {
-    padding: 0;
+  .attractions__title {
+    margin: 0 auto;
+    width: 35%;
+  }
+
+  .attractions__item {
+    padding-bottom: 70px;
   }
 }
