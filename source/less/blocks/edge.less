@@ -1,15 +1,9 @@
 .edge {
   background-color: @blue-50;
   text-align: center;
-  margin: 0 auto;
   cursor: default;
   color: @white;
-
-  &--white {
-    min-width: 320px;
-    /* Временно для сетки*/
-    min-height: 208px;
-  }
+  padding-bottom: 40px;
 }
 
 .edge__title {
@@ -27,39 +21,6 @@
 }
 
 .edge__desc {
-  padding-bottom: 43px;
-  margin: 0;
-  width: 75%;
-  padding-left: 25px;
   color: @white;
-}
-
-@media (min-width: @tablet-width) {
-  .edge--white {
-    min-width: 255px;
-    /* Временно для сетки*/
-    min-height: 257px;
-  }
-
-  .edge--silver {
-    background-color: @gray-120;
-    min-width: 255px;
-    /* Временно для сетки*/
-    min-height: 257px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .edge--white {
-    min-width: 400px;
-    /* Временно для сетки*/
-    min-height: 256px;
-  }
-
-  .edge--silver {
-    background-color: @gray-120;
-    min-width: 400px;
-    /* Временно для сетки*/
-    min-height: 256px;
-  }
+  margin: 0;
 }

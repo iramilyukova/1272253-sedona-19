@@ -15,46 +15,36 @@
   padding-top: 35px;
 }
 
-.town-edge__title {
-  // padding-top: 35px;
-  // padding-left: 53px;
-
-  &--house {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-house.svg");
-    }
+.town-edge__title--house {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-house.svg");
   }
+}
 
-  &--gift {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-gift.svg");
-    }
+.town-edge__title--gift {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-gift.svg");
   }
+}
 
-  &--burger {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-burger.svg");
-    }
+.town-edge__title--burger {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-burger.svg");
   }
 }
 
 .town-edge__desc {
   margin: 0;
   padding-top: 35px;
-  // padding-left: 49px;
-  // padding-bottom: 43px;
 }
 
 @media (min-width: @tablet-width) {
   .town-edge {
     width: auto;
     margin: 0;
-    min-width: 256px;
-    /* Временно для сетки*/
-    min-height: 332px;
 
     &--wrapper {
       display: flex;
@@ -71,7 +61,6 @@
     padding-top: 163px;
     padding-left: 0;
     padding-bottom: 66px;
-    width: 256px;
   }
 
   .town-edge__title {
@@ -92,11 +81,5 @@
         .icon-index-table();
       }
     }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .town-edge {
-    min-width: 400px;
   }
 }

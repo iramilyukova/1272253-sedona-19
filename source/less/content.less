@@ -1,14 +1,12 @@
 body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
+  width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   color: @black-100;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: @gray-50;
 }
 
 a {
@@ -26,11 +24,20 @@ img {
 }
 
 .wrapper {
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 8px 11px 2px @gray-60;
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 768px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .wrapper__color {
-    background-color: @white;
+  .wrapper {
+    width: 1200px;
   }
 }
