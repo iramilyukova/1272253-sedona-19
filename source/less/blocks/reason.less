@@ -1,5 +1,6 @@
 .reason__list {
   .clear-ul;
+  width: 100%;
 }
 
 .reason__item {
@@ -7,8 +8,13 @@
   width: 100%;
   cursor: default;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.reason__image {
-  margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .reason__item {
+    display: flex;
+    flex-direction: row;
+  }
 }

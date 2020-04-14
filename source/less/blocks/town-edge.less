@@ -5,41 +5,115 @@
   &--wrapper {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0;
   }
 }
 
 .town-edge__item {
   position: relative;
+  padding-left: 53px;
+  padding-top: 37px;
+  padding-bottom: 0;
+
+  &:nth-child(3) {
+    padding-bottom: 40px;
+  }
 }
 
-.town-edge__title {
-  padding-top: 35px;
-  padding-left: 53px;
-
-  &--house {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-house.svg");
-    }
+.town-edge__title--house {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-house.svg");
   }
+}
 
-  &--gift {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-gift.svg");
-    }
+.town-edge__title--gift {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-gift.svg");
   }
+}
 
-  &--burger {
-    &::before {
-      .icon-index();
-      background-image: url("../img/icon-burger.svg");
-    }
+.town-edge__title--burger {
+  &::before {
+    .icon-index();
+    background-image: url("../img/icon-burger.svg");
   }
 }
 
 .town-edge__desc {
-  margin: 0;
-  padding-top: 35px;
-  padding-left: 49px;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 25px;
+  color: @black-70;
+}
+
+@media (min-width: @tablet-width) {
+  .town-edge {
+    width: auto;
+    margin: 0;
+
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .town-edge__item {
+    flex-basis: 33.33%;
+    text-align: center;
+    padding-top: 163px;
+    padding-left: 0;
+    padding-bottom: 66px;
+
+    &:nth-child(3) {
+      padding-bottom: 0;
+    }
+  }
+
+  .town-edge__item--order {
+    order: 1;
+  }
+
+  .town-edge__title {
+    &--house {
+      &::before {
+        .icon-index-table();
+      }
+    }
+
+    &--gift {
+      &::before {
+        .icon-index-table();
+      }
+    }
+
+    &--burger {
+      &::before {
+        .icon-index-table();
+      }
+    }
+  }
+
+  .town-edge__desc {
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .town-edge__desc {
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 35px;
+
+    &--position {
+      margin: 0 auto;
+      width: 49%;
+    }
+  }
 }

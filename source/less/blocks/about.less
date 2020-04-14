@@ -1,29 +1,44 @@
+.about {
+  padding: 0;
+  margin: 0;
+}
+
+.about__form {
+  padding-bottom: 20px;
+}
+
 .about__title {
   padding-top: 38px;
   padding-bottom: 40px;
-  margin: 0;
+  margin: 0 auto;
 
-  &--big {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
-    padding-top: 34px;
+  &--sedona {
+    margin: 0 auto;
+    width: 85%;
   }
 }
 
 .about__container {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  min-width: 320px;
+  padding-top: 35px;
+  padding-bottom: 48px;
 }
 
 .about__text {
   margin: 0;
   text-align: center;
-  padding-bottom: 40px;
+  color: @black-70;
+
+  &--reasons {
+    margin: 0 auto;
+    width: 87%;
+    padding-bottom: 33px;
+  }
 
   &--photo {
+    margin: 0 auto;
+    width: 85%;
     padding-bottom: 30px;
     margin-top: 0;
   }
@@ -31,4 +46,109 @@
 
 .about__button {
   display: inline-block;
+}
+
+@media (min-width: @tablet-width) {
+  .about__container {
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 58px;
+  }
+
+  .about__title--sedona {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 56px;
+  }
+
+  .about--btn {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about__title--big {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 34px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .about__text--btn {
+    margin: 0 auto;
+    width: 439px;
+    padding-bottom: 47px;
+  }
+
+  .about__text--photo {
+    margin: 0 auto;
+    width: 57%;
+    padding-bottom: 75px;
+    margin-top: 0;
+  }
+
+  .about__text--form {
+    margin: 0 auto;
+    width: 57%;
+    border-bottom: none;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__container {
+    padding-top: 48px;
+    padding-bottom: 66px;
+  }
+
+  .about__form {
+    padding-bottom: 0;
+  }
+
+  .about__title {
+    margin: 0 auto;
+    padding-top: 68px;
+    padding-bottom: 39px;
+
+    &--sedona {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    &--big {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 0;
+      padding-top: 58px;
+    }
+  }
+
+  .about__text--reasons {
+    margin: 0 auto;
+    width: 78%;
+    padding-bottom: 58px;
+  }
+
+  .about__text--btn {
+    min-width: 435px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    width: 78%;
+  }
+
+  .about__text--photo {
+    margin: 0 auto;
+    width: 36%;
+    margin-top: 0;
+  }
+
+  .about__text--form {
+    margin: 0 auto;
+    width: 37%;
+    border-bottom: none;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+  }
 }

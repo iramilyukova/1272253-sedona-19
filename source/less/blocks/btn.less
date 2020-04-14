@@ -2,7 +2,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
+  margin: 0 auto;
   color: @white;
   text-transform: uppercase;
   border: none;
@@ -26,5 +26,15 @@
   &:disabled {
     background-color: @gray-150;
     color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    padding-left: 134px;
+    padding-right: 136px;
   }
 }

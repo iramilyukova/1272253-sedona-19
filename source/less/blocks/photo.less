@@ -3,7 +3,8 @@
   padding-right: 20px;
 }
 
-.photo__list {
+.photo__item {
+  position: relative;
   padding-bottom: 20px;
   border-top: 1px solid @gray-50;
 
@@ -32,12 +33,15 @@
   text-transform: none;
 }
 
+.photo__box svg {
+  fill: @gray-40;
+}
+
 .photo__author-name {
   text-transform: none;
 }
 
 .photo__icon {
-  background-image: url("../img/icon-like.svg");
   width: 23px;
   height: 20px;
   background-repeat: no-repeat;
@@ -53,4 +57,111 @@
   margin-bottom: 20px;
   padding-left: 12px;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .photo__title {
+    padding-bottom: 0;
+  }
+
+  .photo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo__contener {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: @gray-50;
+    padding-left: 20px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+
+    &--grey {
+      background-color: @gray-70;
+    }
+  }
+
+  .photo__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__box {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    width: 65px;
+    min-height: 22px;
+    margin-top: 24px;
+  }
+
+  .photo__box svg {
+    fill: @gray-90;
+  }
+
+  .photo__item {
+    padding: 0;
+    border-top: none;
+    flex-basis: 50%;
+
+    &:first-child {
+      flex-basis: 100%;
+    }
+
+    &--bottom {
+      border-bottom: none;
+    }
+  }
+
+  .photo__src {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo__title {
+    padding-bottom: 0;
+    color: @white;
+  }
+
+  .photo__contener {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: @black-30;
+    padding-left: 20px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .photo__item {
+    padding: 0;
+    border-top: none;
+    flex-basis: 33.33%;
+  }
+
+  .photo__author {
+    color: @white;
+  }
+
+  .photo__box svg {
+    fill: @white;
+  }
+
+  .photo__rating {
+    color: @white;
+  }
 }
