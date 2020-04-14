@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
   color: @black-50;
 
   &--contact {
@@ -13,6 +13,7 @@
 .form__border {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid @gray-50;
 
   &--bottom {
@@ -21,7 +22,8 @@
 }
 
 .form__header {
-  padding-top: 25px;
+  padding: 0;
+  padding-top: 15px;
   padding-bottom: 20px;
 }
 
@@ -41,7 +43,7 @@
   border: 2px solid transparent;
   padding-top: 18px;
   padding-bottom: 18px;
-  padding-left: 18px;
+  padding-left: 9px;
 
   &--contact {
     margin-bottom: 10px;
@@ -111,4 +113,18 @@
   font-weight: 700;
   display: inline-block;
   text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__border {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    border-top: none;
+  }
+
+  .form__header {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
 }

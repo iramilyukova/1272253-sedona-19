@@ -22,7 +22,7 @@
   left: 22px;
   height: 3px;
   width: 237px;
-  background-color: @black-30;
+  background-color: @gray-30;
 }
 
 .video__range-toggle {
@@ -94,5 +94,17 @@
 
   &:active svg {
     fill: @gray-70;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-bottom: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    padding-bottom: 100px;
   }
 }

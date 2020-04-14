@@ -1,6 +1,10 @@
-.about--btn {
-  margin: 0 auto;
+.about {
   padding: 0;
+  margin: 0;
+}
+
+.about__form {
+  padding-bottom: 20px;
 }
 
 .about__title {
@@ -24,17 +28,17 @@
 .about__text {
   margin: 0;
   text-align: center;
-  padding: 0 40px 40px 40px;
+  color: @black-70;
 
   &--reasons {
     margin: 0 auto;
     width: 87%;
     padding-bottom: 33px;
-    padding-left: 20px;
   }
 
   &--photo {
     margin: 0 auto;
+    width: 85%;
     padding-bottom: 30px;
     margin-top: 0;
   }
@@ -45,15 +49,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .about {
-    margin: 0 auto;
-    /* Временно для сетки */
-    min-height: 208px;
-  }
-
   .about__container {
     margin: 0;
-    min-width: 768px;
     padding-top: 48px;
     padding-bottom: 58px;
   }
@@ -67,8 +64,6 @@
   .about--btn {
     margin: 0 auto;
     text-align: center;
-    /* Временно для сетки */
-    min-height: 335px;
   }
 
   .about__title--big {
@@ -86,22 +81,30 @@
     width: 439px;
     padding-bottom: 47px;
   }
+
+  .about__text--photo {
+    margin: 0 auto;
+    width: 57%;
+    padding-bottom: 75px;
+    margin-top: 0;
+  }
+
+  .about__text--form {
+    margin: 0 auto;
+    width: 57%;
+    border-bottom: none;
+    padding-bottom: 70px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .about {
-    /* Временно для сетки */
-    min-height: 208px;
-  }
-
   .about__container {
     padding-top: 48px;
     padding-bottom: 66px;
   }
 
-  .about--btn {
-    /* Временно для сетки */
-    min-height: 319px;
+  .about__form {
+    padding-bottom: 0;
   }
 
   .about__title {
@@ -133,5 +136,19 @@
     padding-bottom: 55px;
     margin: 0 auto;
     width: 78%;
+  }
+
+  .about__text--photo {
+    margin: 0 auto;
+    width: 36%;
+    margin-top: 0;
+  }
+
+  .about__text--form {
+    margin: 0 auto;
+    width: 37%;
+    border-bottom: none;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
   }
 }
