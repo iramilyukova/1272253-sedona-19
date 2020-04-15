@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-.about__form {
-  padding-bottom: 20px;
-}
-
 .about__title {
   padding-top: 38px;
   padding-bottom: 40px;
@@ -66,14 +62,16 @@
     text-align: center;
   }
 
+  .about__form {
+    padding-bottom: 0;
+  }
+
   .about__title--big {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
-    padding-top: 34px;
     font-size: 30px;
     line-height: 26px;
+    padding-top: 34px;
   }
 
   .about__text--btn {
@@ -93,11 +91,17 @@
     margin: 0 auto;
     width: 57%;
     border-bottom: none;
-    padding-bottom: 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    padding: 0;
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .about__container {
     padding-top: 48px;
     padding-bottom: 66px;
@@ -148,7 +152,5 @@
     margin: 0 auto;
     width: 37%;
     border-bottom: none;
-    padding-bottom: 60px;
-    margin-bottom: 20px;
   }
 }
