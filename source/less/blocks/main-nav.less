@@ -129,35 +129,64 @@
 
   .main-nav__item {
     width: 25%;
+    display: inline-block;
     box-sizing: border-box;
     padding-top: 18px;
     padding-bottom: 18px;
+    border-top: none;
+    border-bottom: none;
 
     a {
       color: @black-100;
+      cursor: pointer;
+    }
+
+    &:hover a {
+      color: @blue-50;
+    }
+
+    &:active a {
+      color: @gray-40;
     }
 
     &:nth-child(3n),
     &:nth-child(3n+1) {
       text-align: right;
+      background-color: @white;
     }
 
     &:nth-child(2) {
       text-align: left;
+      background-color: @white;
     }
 
     &:nth-child(3) {
       text-align: right;
+      background-color: @white;
     }
 
     &:first-child,
     &:nth-child(5n) {
       padding-left: 47px;
       text-align: left;
+      background-color: @white;
     }
 
     &:nth-child(4n) {
       padding-right: 27px;
+      background-color: @white;
+    }
+  }
+
+  .main-nav__item--active a {
+    color: @broun-10;
+
+    &:hover {
+      color: @broun-20;
+    }
+
+    &:active {
+      color: @broun-00;
     }
   }
 

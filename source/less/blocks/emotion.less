@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+.emotion__legend {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .emotion__title {
     padding-top: 0;
@@ -35,13 +39,33 @@
     min-width: 648px;
   }
 
+  .emotion__box {
+    display: flex;
+  }
+
   .emotion__button {
     margin-left: 0;
+    padding-left: 63px;
+    padding-right: 73px;
+  }
+
+  .emotion__legend {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    color: @black-70;
+    text-align: right;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotion__textarea {
     width: 960px;
+  }
+
+  .emotion__button {
+    padding-left: 148px;
+    padding-right: 148px;
   }
 }

@@ -103,12 +103,18 @@
     padding-bottom: 0;
   }
 
+  .video__clip {
+    position: relative;
+    top: 75px;
+    padding-bottom: 63px;
+  }
+
   .video__controls {
     position: absolute;
     background-color: @black-60;
     width: 648px;
     height: 95px;
-    bottom: 67px;
+    bottom: 55px;
     left: 60px;
   }
 
@@ -127,7 +133,7 @@
 
   .video__btn {
     position: absolute;
-    top: 151px;
+    top: 222px;
     left: 70px;
   }
 
@@ -137,7 +143,7 @@
 
   .video__flex {
     position: absolute;
-    top: 127px;
+    top: 200px;
     left: 554px;
     margin: 0;
     margin-left: auto;
@@ -158,8 +164,14 @@
 
 @media (min-width: @desktop-width) {
   .video {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .video__clip {
+    position: relative;
+    top: 75px;
+    padding-bottom: 103px;
   }
 
   .video__controls {
@@ -167,8 +179,20 @@
     background-color: @black-60;
     width: 800px;
     height: 95px;
-    bottom: 122px;
-    left: 60px;
+    top: 187px;
+    left: 200px;
+  }
+
+  .video__btn {
+    position: absolute;
+    top: 151px;
+    left: 70px;
+  }
+
+  .video__replay {
+    position: absolute;
+    top: 30px;
+    left: 145px;
   }
 
   .video__scale {
@@ -181,13 +205,7 @@
   .video__range-toggle {
     position: absolute;
     bottom: 40px;
-    left: 290px;
-  }
-
-  .video__btn {
-    position: absolute;
-    top: 193px;
-    left: 70px;
+    left: 208px;
   }
 
   .video__buttons {
@@ -196,8 +214,8 @@
 
   .video__flex {
     position: absolute;
-    top: 172px;
-    left: 692px;
+    top: 200px;
+    right: 100px;
     margin: 0;
     margin-left: auto;
   }
