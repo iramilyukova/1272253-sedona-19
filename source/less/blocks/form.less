@@ -129,16 +129,16 @@
   display: block;
   line-height: 56px;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     position: absolute;
     left: 0;
     top: 0;
-    content: '';
+    content: "";
     border-radius: 50%;
   }
 
-  &:after {
+  &::after {
     width: 22px;
     height: 22px;
     background-color: @black-70;
@@ -147,33 +147,33 @@
     opacity: 0;
   }
 
-  &:before {
+  &::before {
     width: 56px;
     height: 56px;
     background-color: @gray-50;
   }
 
   &:hover {
-    &:before {
+    &::before {
       background-color: @gray-150;
     }
   }
 
   &:active {
-    &:before {
+    &::before {
       background-color: @gray-170;
     }
   }
 
   &--checkbox {
-    &:before {
+    &::before {
       border-radius: 4px;
     }
 
-    &:after {
+    &::after {
       width: 56px;
       height: 56px;
-      background: url(../img/icon-tick.svg) no-repeat center;
+      background: url (../img/icon-tick.svg) no-repeat center;
       top: 0;
       left: 0;
     }
@@ -184,13 +184,13 @@
   display: none;
 
   &:checked + .form__survey {
-    &:after {
+    &::after {
       opacity: 1;
     }
 
     &:active {
-      &:after {
-        opacity: .3;
+      &::after {
+        opacity: 0.3;
       }
     }
   }
@@ -234,13 +234,13 @@
       order: -1;
       position: relative;
 
-      &:after {
+      &::after {
         position: absolute;
         right: -50px;
         top: 0;
         width: 1px;
         height: 100%;
-        content: '';
+        content: "";
         background-color: @gray-180;
       }
     }
@@ -273,11 +273,11 @@
     &--line {
       position: relative;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         width: 125px;
         height: 1px;
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
@@ -285,7 +285,7 @@
         left: 0;
       }
 
-      &:after {
+      &::after {
         left: auto;
         right: 0;
       }
@@ -353,10 +353,10 @@
   }
 
   .form__border {
-
     &--emotion {
       width: 428px;
-      &:after {
+
+      &::after {
         right: -55px;
       }
     }
@@ -381,8 +381,8 @@
       width: 100%;
       box-sizing: border-box;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
