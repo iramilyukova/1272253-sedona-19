@@ -13,8 +13,9 @@
         <a class="page-header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav  main-nav--opened  main-nav--nojs">
           <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" fill="#fff">
               <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
             </svg>
@@ -53,7 +54,7 @@
         <section class="welcome  welcome--index">
           <img class="welcome__text" src="img/text-sedona-index.svg" width="280" height="214" alt="Заставка Седоны">
         </section>
-        <section class="about">
+        <section class="about  about--sedona">
           <h2 class="title  about__title  about__title--sedona">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="about__text  about__text--reasons">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньен!</p>
         </section>
@@ -86,7 +87,7 @@
               </ul>
             </li>
             <li class="reason__item">
-              <div class="edge">
+              <div class="edge  edge--order">
                 <h3 class="title  edge__title">Там есть мост дьявола</h3>
                 <p class="edge__number">&mdash; №2 &mdash;</p>
                 <p class="edge__desc  edge__desc--whidth">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -178,6 +179,7 @@
           </div>
         </div>
       </footer>
+      <script src="./js/script.js"></script>
     </div>
   </body>
 </html>

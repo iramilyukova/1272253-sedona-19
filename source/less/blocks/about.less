@@ -3,12 +3,13 @@
   margin: 0;
 }
 
-.about__form {
-  padding-bottom: 20px;
+.about--sedona {
+  padding-top: 47px;
+  padding-bottom: 49px;
 }
 
 .about__title {
-  padding-top: 38px;
+  padding: 0;
   padding-bottom: 40px;
   margin: 0 auto;
 
@@ -19,10 +20,10 @@
 }
 
 .about__container {
-  margin: 0 auto;
-  min-width: 320px;
   padding-top: 35px;
   padding-bottom: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about__text {
@@ -32,8 +33,12 @@
 
   &--reasons {
     margin: 0 auto;
+    padding: 0;
     width: 87%;
-    padding-bottom: 33px;
+  }
+
+  &--btn {
+    padding-bottom: 40px;
   }
 
   &--photo {
@@ -49,10 +54,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .about--sedona {
+    padding-top: 49px;
+    padding-bottom: 58px;
+  }
+
   .about__container {
     margin: 0;
     padding-top: 48px;
-    padding-bottom: 58px;
   }
 
   .about__title--sedona {
@@ -66,12 +75,19 @@
     text-align: center;
   }
 
+  .about__form {
+    padding-bottom: 0;
+  }
+
   .about__title--big {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 0;
+    font-size: 30px;
+    line-height: 26px;
     padding-top: 34px;
+  }
+
+  .about__title--photo {
     font-size: 30px;
     line-height: 26px;
   }
@@ -85,19 +101,29 @@
   .about__text--photo {
     margin: 0 auto;
     width: 57%;
-    padding-bottom: 75px;
     margin-top: 0;
+    padding-bottom: 0;
   }
 
   .about__text--form {
     margin: 0 auto;
     width: 57%;
     border-bottom: none;
-    padding-bottom: 70px;
+  }
+
+  .about__text--reasons {
+    padding-left: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    padding: 0;
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .about__container {
     padding-top: 48px;
     padding-bottom: 66px;
@@ -109,11 +135,11 @@
 
   .about__title {
     margin: 0 auto;
-    padding-top: 68px;
     padding-bottom: 39px;
 
     &--sedona {
       margin: 0 auto;
+      max-width: 442px;
       width: 50%;
     }
 
@@ -127,7 +153,6 @@
 
   .about__text--reasons {
     margin: 0 auto;
-    width: 78%;
     padding-bottom: 58px;
   }
 
@@ -148,7 +173,5 @@
     margin: 0 auto;
     width: 37%;
     border-bottom: none;
-    padding-bottom: 60px;
-    margin-bottom: 20px;
   }
 }
