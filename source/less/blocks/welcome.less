@@ -1,5 +1,5 @@
 .welcome--index {
-  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 50%;
+  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat 50%;
   padding-top: 87px;
   padding-bottom: 90px;
   padding-left: 45px;
@@ -7,7 +7,7 @@
 }
 
 .welcome--photo {
-  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat -227px -225px;
+  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat -227px -225px;
   padding-top: 52px;
   padding-bottom: 60px;
   padding-left: 45px;
@@ -28,15 +28,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .welcome--index {
-    width: auto;
-    margin: 0;
+  .welcome--index,
+  .welcome--photo {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      width: auto;
+      margin: 0;
+    }
   }
 
   .welcome--photo {
-    /* Временно для сетки */
-    min-height: 290px;
+    min-height: 346px;
   }
+
 
   .welcome__text {
     width: 461px;
@@ -56,13 +60,16 @@
   .welcome--index {
     width: auto;
     margin: 0;
-    /* Временно для сетки */
-    min-height: 512px;
+    min-height: 520px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .welcome--photo {
     /* Временно для сетки */
-    min-height: 303px;
+    min-height: 300px;
   }
 
   .welcome__text {
