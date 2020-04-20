@@ -1,5 +1,5 @@
 .welcome--index {
-  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat 50%;
+  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat -647px -100px;
   padding-top: 87px;
   padding-bottom: 90px;
   padding-left: 45px;
@@ -16,7 +16,12 @@
 
 .welcome__text {
   margin: 0 auto;
-  width: 280px;
+
+  &--index {
+    margin: 0 auto;
+    width: 300px;
+    height: 218px;
+  }
 
   &--sedona {
     margin: 0 auto;
@@ -28,13 +33,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .welcome--index,
-  .welcome--photo {
+  .welcome--index {
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat -229px -255px;
       width: auto;
       margin: 0;
-    }
+  }
+
+  .welcome--photo {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat -227px -225px;
   }
 
   .welcome--photo {
@@ -63,7 +71,7 @@
     min-height: 520px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat -227px -225px;
     }
   }
 
