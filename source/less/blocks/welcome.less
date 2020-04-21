@@ -1,17 +1,28 @@
 .welcome--index {
-  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat -647px -100px;
+  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 1px 1px;
   padding-top: 87px;
   padding-bottom: 90px;
   padding-left: 45px;
   padding-right: 45px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg") no-repeat -1px 100px;
+    padding-top: 87px;
+    background-size: 320px auto;
+  }
 }
 
 .welcome--photo {
-  background: @blue-25 url("../img/bg-back-mobile@2x.jpg") no-repeat -227px -225px;
+  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 1px 1px;
   padding-top: 52px;
   padding-bottom: 60px;
   padding-left: 45px;
   padding-right: 45px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .welcome__text {
@@ -26,70 +37,81 @@
   &--sedona {
     margin: 0 auto;
     width: 229px;
-    min-height: 40px;
+    height: 40px;
     padding-top: 2px;
     padding-bottom: 10px;
   }
 }
 
 @media (min-width: @tablet-width) {
+
   .welcome--index {
+    background-image: url("../img/bg-back-tablet@1x.jpg") no-repeat 100%;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat -229px -255px;
+      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 -55px;
+      background-size: 768px auto;
       width: auto;
       margin: 0;
+    }
   }
 
   .welcome--photo {
+    height: 346px;
+    background-image: url("../img/bg-back-tablet@1x.jpg") no-repeat 100%;
+    background-size: 782px auto;
+    padding-bottom: 0;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat -227px -225px;
+      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 -225px;
+      background-size: 782px auto;
+    }
   }
-
-  .welcome--photo {
-    min-height: 346px;
-  }
-
 
   .welcome__text {
     width: 461px;
-    /* Временно для сетки */
-    min-height: 355px;
+    height: 355px;
 
     &--sedona {
+      padding-top: 100px;
       margin: 0 auto;
       width: 460px;
-      /* Временно для сетки */
-      min-height: 78px;
+      height: 78px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome--index {
+    background-image: url("../img/bg-back-desktop@1x.jpg") no-repeat 100%;
     width: auto;
     margin: 0;
-    min-height: 520px;
+    height: 520px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat -227px -225px;
+      background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -225px;
+      background-size: 1200px auto;
     }
   }
 
   .welcome--photo {
-    /* Временно для сетки */
-    min-height: 300px;
+    height: 263px;
+    width: auto;
+    margin: 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg") no-repeat 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -225px;
+      background-size: 1200px auto;
+    }
   }
 
   .welcome__text {
     width: 463px;
-    /* Временно для сетки */
-    min-height: 355px;
+    height: 355px;
 
     &--sedona {
-      margin: 0 auto;
-      width: 464px;
-      /* Временно для сетки */
-      min-height: 78px;
+      height: 78px;
     }
   }
 }
