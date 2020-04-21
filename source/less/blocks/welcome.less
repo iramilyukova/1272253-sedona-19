@@ -17,14 +17,15 @@
   }
 }
 
-.welcome__mask,
-.welcome__mask-photo {
+.welcome--mask::before {
+  content: "";
   position: absolute;
   width: 100%;
-  height: 57px;
+  height: 27px;
   left: 0;
-  bottom: -31px;
+  bottom: 0;
   background: url(../img/bg-intro-triangle-mobile.svg) no-repeat;
+  background-size: cover;
 }
 
 .welcome--photo {
@@ -71,26 +72,19 @@
     }
   }
 
-.welcome__mask {
-  position: absolute;
-  width: 100%;
-  height: 57px;
-  left: 0;
-  bottom: 0;
-  background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
-}
-
-.welcome__mask-photo {
-  position: absolute;
-  width: 100%;
-  height: 57px;
-  left: 0;
-  bottom: 95px;
-  background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
-}
+  .welcome--mask::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
+    background-size: cover;
+  }
 
   .welcome--photo {
-    height: 346px;
+    height: 230px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 1px 10px;
     background-size: 1064px auto;
     padding-bottom: 0;
@@ -147,13 +141,14 @@
     }
   }
 
-  .welcome__mask,
-  .welcome__mask-photo {
+  .welcome--mask::before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 57px;
     left: 0;
     bottom: 0;
     background: url(../img/bg-intro-triangle-desktop.svg) no-repeat;
+    background-size: cover;
   }
 }
