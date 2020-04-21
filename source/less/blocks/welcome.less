@@ -1,19 +1,34 @@
+.welcome {
+  position: relative;
+}
+
 .welcome--index {
-  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 1px 1px;
-  padding-top: 87px;
+  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
+  background-size: 793px auto;
+  padding-top: 84px;
   padding-bottom: 90px;
   padding-left: 45px;
   padding-right: 45px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat -1px 100px;
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat -259px 0;
     padding-top: 87px;
-    background-size: 320px auto;
+    background-size: 793px auto;
   }
 }
 
+.welcome__mask,
+.welcome__mask-photo {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  left: 0;
+  bottom: -31px;
+  background: url(../img/bg-intro-triangle-mobile.svg) no-repeat;
+}
+
 .welcome--photo {
-  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat 1px 1px;
+  background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat -230px -225px;
   padding-top: 52px;
   padding-bottom: 60px;
   padding-left: 45px;
@@ -21,7 +36,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: 793px auto;
   }
 }
 
@@ -30,7 +45,7 @@
 
   &--index {
     margin: 0 auto;
-    width: 300px;
+    width: 320px;
     height: 218px;
   }
 
@@ -46,25 +61,43 @@
 @media (min-width: @tablet-width) {
 
   .welcome--index {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 1px 1px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 -55px;
-      background-size: 768px auto;
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 0;
+      background-size: 863px auto;
       width: auto;
       margin: 0;
     }
   }
 
+.welcome__mask {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  left: 0;
+  bottom: 0;
+  background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
+}
+
+.welcome__mask-photo {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  left: 0;
+  bottom: 95px;
+  background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
+}
+
   .welcome--photo {
     height: 346px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 1px 1px;
-    background-size: 782px auto;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 1px 10px;
+    background-size: 1064px auto;
     padding-bottom: 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 -225px;
-      background-size: 782px auto;
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 0 -415px;
+      background-size: 1064px auto;
     }
   }
 
@@ -73,7 +106,7 @@
     height: 355px;
 
     &--sedona {
-      padding-top: 100px;
+      padding-top: 33px;
       margin: 0 auto;
       width: 460px;
       height: 78px;
@@ -83,14 +116,13 @@
 
 @media (min-width: @desktop-width) {
   .welcome--index {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 2px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
     width: auto;
     margin: 0;
-    height: 520px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -225px;
-      background-size: 1200px auto;
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 0;
+      background-size: 1278px auto;
     }
   }
 
@@ -98,11 +130,11 @@
     height: 263px;
     width: auto;
     margin: 0;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 1px 1px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 -202px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -225px;
-      background-size: 1200px auto;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1278px auto;
     }
   }
 
@@ -113,5 +145,15 @@
     &--sedona {
       height: 78px;
     }
+  }
+
+  .welcome__mask,
+  .welcome__mask-photo {
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background: url(../img/bg-intro-triangle-desktop.svg) no-repeat;
   }
 }
