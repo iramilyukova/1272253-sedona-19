@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
+    <script src="picturefill.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
@@ -50,7 +55,7 @@
         </nav>
       </header>
       <main class="page-main">
-        <section class="welcome  welcome--photo">
+        <section class="welcome  welcome--photo  welcome--mask">
           <img class="welcome__text--sedona" src="img/text-sedona.svg" width="320" height="160" alt="Заставка Седоны">
         </section>
         <section class="about  about__form">
