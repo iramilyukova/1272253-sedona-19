@@ -103,7 +103,7 @@
               </div>
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                 <img class="reason__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
               </picture>
             </li>
@@ -141,9 +141,18 @@
             <p class="about__text  about__text--btn">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="btn  about__button" href="search.html">Найти гостиницу</a>
           </div>
-          <div class="map">
-            <h2 class="visually-hidden">Забронировать отель</h2>
-            <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="Седона на Карте">
+          <div class="about__map">
+            <span class="visually-hidden">Найдем Седону на карте</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+              <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+              <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+            </svg>
+            <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на Карте">
+            </picture>
             <!--<iframe class="map__google" src=""></iframe>!-->
           </div>
         </section>

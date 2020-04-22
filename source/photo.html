@@ -199,9 +199,11 @@
           <h2 class="title  about__title  about__title--big">Все еще сомневаетесь?</h2>
           <p class="about__text  about__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video">
-            <video class="video__clip" poster="/img/video-mobile@1x.jpg" preload="metadata" width="320" height="212">
-              <sourse srs="video.mp4" type="video/mp4">
-            </video>
+            <picture class="video__clip">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Фото Седоны">
+            </picture>
             <div class="video__box">
               <div class="video__controls">
                 <div class="video__scale">
