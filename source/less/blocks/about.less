@@ -74,6 +74,16 @@
   padding-top: 40px;
 }
 
+.about__map {
+  position: relative;
+}
+
+.about__map svg {
+  position: absolute;
+  padding-left: 150px;
+  padding-top: 157px;
+}
+
 @media (min-width: @tablet-width) {
   .about--sedona {
     padding-top: 49px;
@@ -140,16 +150,14 @@
   .about__text--reasons {
     padding-left: 10px;
   }
+
+  .about__map svg {
+    padding-left: 375px;
+    padding-top: 159px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .about {
-    padding: 0;
-    margin: 0;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   .about__container {
     padding-top: 48px;
     padding-bottom: 66px;
@@ -204,5 +212,10 @@
     margin: 0 auto;
     width: 37%;
     border-bottom: none;
+  }
+
+  .about__map svg {
+    padding-left: 526px;
+    padding-top: 144px;
   }
 }
