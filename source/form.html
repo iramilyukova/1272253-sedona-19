@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
-    <script src="picturefill.js"></script>
+    <script src="./js/picturefill.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -20,8 +20,8 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" fill="#fff">
-              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+            <svg width="22" height="22" aria-hidden="true" focusable="false">
+              <use xlink:href="img/map.#icon-close"></use>
             </svg>
           </button>
           <div class="main-nav__wrapper">
@@ -42,13 +42,8 @@
           </div>
           <div class="main-nav__white">
             <button class="main-nav__menu" type="button">
-              <span class="visually-hidden">Меню</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" fill="#81b3d2">
-                <g>
-                  <rect width="22.928" height="3.964"/>
-                  <rect y="9.009" width="22.928" height="3.964"/>
-                  <rect y="18.018" width="22.928" height="3.964"/>
-                </g>
+              <svg width="23" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="img/map.svg#icon-menu"></use>
               </svg>
             </button>
           </div>
@@ -194,21 +189,21 @@
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Переходите на сайт Твиттерa">
                   <svg class="social__social" width="17.5" height="14.6">
-                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    <use xlink:href="img/map.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Переходите на сайт Фейсбукa">
                   <svg class="social__social" width="9" height="19">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    <use xlink:href="img/map.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Переходите на сайт Ютуба">
                   <svg class="social__social" width="20" height="14">
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                    <use xlink:href="img/map.svg#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -225,5 +220,7 @@
         </div>
       </footer>
     </div>
+    <script src="/path/to/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>
