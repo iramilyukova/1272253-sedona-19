@@ -1,4 +1,4 @@
-.clear-ul {
+.clear-ul () {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@
 
 .icon-index() {
   content: "";
-  top: 25px;
   position: absolute;
   left: 0;
   display: block;
@@ -18,10 +17,11 @@
 }
 
 .icon-index-table() {
-  left: calc(50% - 40px);
+  left: 50%;
   width: 80px;
   height: 80px;
   top: 60px;
+  transform: translate(-50, 0);
 }
 
 .icon-video() {

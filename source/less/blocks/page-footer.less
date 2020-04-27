@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--photo {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__hashtag {
@@ -10,23 +14,35 @@
   font-weight: 700;
   cursor: default;
   padding-top: 75px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   margin: 0;
 
   &--index {
-    padding-top: 40px;
+    padding-top: 34px;
   }
 
   &--photo {
     padding-top: 78px;
   }
+
+  &--form {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
 }
 
 .page-footer__copyright {
-  font-weight: 400;
-  padding-top: 2px;
   padding-bottom: 22px;
   cursor: default;
+  margin-top: -2px;
+
+  &--index {
+    margin-top: 1px;
+  }
+
+  &--position {
+    margin-top: -4px;
+  }
 
   &:hover svg {
     fill: @blue-50;
@@ -46,7 +62,8 @@
 }
 
 .page-footer__logo {
-  margin-left: 18px;
+  margin-left: 7px;
+  margin-bottom: -6px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -58,10 +75,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0 60px;
+    padding-top: 9px;
+
+    &--photo {
+      padding-top: 13px;
+    }
+
+    &--form {
+      padding-top: 40px;
+    }
   }
 
   .page-footer__hashtag {
     margin: 0;
+
+    &--position {
+      padding-top: 62px;
+      padding-bottom: 45px;
+    }
+
+    &--form {
+      padding-top: 65px;
+      padding-bottom: 44px;
+    }
   }
 
   .page-footer__social {
@@ -70,15 +106,30 @@
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    padding-left: 6px;
-  }
+    margin-top: 22px;
+    margin-left: 112px;
+
+    &--index {
+      margin-top: 6px;
+      margin-left: 113px;
+      }
+    }
 
   .page-footer__copyright {
     display: flex;
     align-items: center;
     cursor: default;
-    padding-top: 0;
     padding-bottom: 0;
+    margin-top: -1px;
+
+    &--photo {
+      margin-top: 21px;
+      padding-right: 2px;
+    }
+
+    &--form {
+      margin-top: 16px;
+    }
   }
 
   .page-footer__logo {
@@ -96,5 +147,26 @@
 
   .page-footer__wrapper {
     padding: 0 120px;
+    padding-top: 10px;
+
+    &--form {
+      padding-top: 44px;
+      padding-left: 118px;
+    }
+  }
+
+  .page-footer__social {
+    margin-left: 269px;
+  }
+
+  .page-footer__logo {
+    margin-left: 5px;
+  }
+
+  .page-footer__copyright {
+    &--form {
+    margin-top: 21px;
+    margin-right: 3px;
+    }
   }
 }

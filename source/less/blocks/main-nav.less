@@ -6,7 +6,7 @@
 .main-nav__toggle {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 17px;
   padding: 0;
   z-index: 2;
   background-color: transparent;
@@ -29,6 +29,10 @@
 }
 
 .main-nav--closed .main-nav__item {
+  display: none;
+}
+
+.main-nav--opened .main-nav__menu {
   display: none;
 }
 
@@ -69,8 +73,8 @@
 .main-nav__item {
   color: @white;
   text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   display: block;
   border-bottom: 1px solid @blue-160;
   border-top: 1px solid @blue-30;
@@ -105,14 +109,14 @@
 
 .main-nav__white {
   position: relative;
-  min-height: 59px;
+  min-height: 57px;
   background-color: @white;
 }
 
 .main-nav__menu {
   position: absolute;
-  top: 15px;
-  right: 17px;
+  top: 17px;
+  right: 13px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -141,8 +145,7 @@
   }
 
   .main-nav__item {
-    width: 25%;
-    display: inline-block;
+    width: 24%;
     box-sizing: border-box;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -158,22 +161,24 @@
     &:nth-child(2) {
       text-align: left;
       background-color: @white;
+      padding-left: 6px;
     }
 
     &:nth-child(3) {
       text-align: right;
       background-color: @white;
+      margin-left: 65px;
+    }
+
+    &:nth-child(4n) {
+      background-color: @white;
+      padding-right: 27px;
     }
 
     &:first-child,
     &:nth-child(5n) {
-      padding-left: 47px;
+      padding-left: 49px;
       text-align: left;
-      background-color: @white;
-    }
-
-    &:nth-child(4n) {
-      padding-right: 27px;
       background-color: @white;
     }
 
@@ -226,10 +231,11 @@
 
     &:nth-child(2) {
       text-align: left;
+      padding-left: 24px;
     }
 
     &:nth-child(3) {
-      padding-right: 16px;
+      padding-right: 23px;
     }
 
     &:first-child,
@@ -239,7 +245,7 @@
     }
 
     &:nth-child(4n) {
-      padding-right: 70px;
+      padding-right: 71px;
     }
   }
 }

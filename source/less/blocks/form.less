@@ -1,16 +1,20 @@
 .form__header {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   &--name {
     margin-bottom: 26px;
   }
 
   &--visited {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   &--text {
     margin-bottom: 22px;
+  }
+
+  &--bottom {
+    margin-bottom: 16px;
   }
 }
 
@@ -22,7 +26,7 @@
   padding-right: 20px;
 
   &--name {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 
@@ -40,17 +44,23 @@
 .form__title {
   color: @black-70;
   display: block;
+  padding-bottom: 2px;
 
   &--contact {
     padding-left: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+  }
+
+  &--position {
+    margin-bottom: 0;
   }
 }
 
 .form__text {
   border: 4px solid @gray-50;
   background-color: @gray-50;
-  padding: 12px;
+  padding: 11px;
+  padding-left: 18px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -64,7 +74,7 @@
     height: 160px;
     resize: none;
     margin-left: 0;
-    margin-bottom: 51px;
+    margin-bottom: 47px;
     display: block;
   }
 
@@ -92,8 +102,8 @@
 }
 
 .form__icon-box {
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   background-color: @gray-20;
   position: absolute;
   right: 0;
@@ -112,7 +122,7 @@
 }
 
 .form__impression {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -121,7 +131,7 @@
 
 .form__survey {
   position: relative;
-  padding-left: 79px;
+  padding-left: 80px;
   font-weight: 700;
   font-size: 18px;
   text-transform: none;
@@ -214,7 +224,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    margin-top: 85px;
+    margin-top: 75px;
   }
 
   .form__wrapper {
@@ -230,13 +240,17 @@
     padding: 0;
     margin: 0;
 
+    &--name {
+      margin-right: -57px;
+    }
+
     &--emotion {
       order: -1;
       position: relative;
 
       &::after {
         position: absolute;
-        right: -50px;
+        right: -52px;
         top: 0;
         width: 1px;
         height: 100%;
@@ -262,12 +276,16 @@
   }
 
   .form__header {
+    margin-bottom: 28px;
+    margin-top: -3px;
+
     &--emotion {
       margin-bottom: 60px;
     }
 
     &--name {
       margin-bottom: 60px;
+      margin-right: 165px;
     }
 
     &--line {
@@ -279,7 +297,7 @@
         height: 1px;
         content: "";
         position: absolute;
-        top: 50%;
+        top: 44%;
         transform: translate(0, -50%);
         background-color: @gray-180;
         left: 0;
@@ -293,6 +311,20 @@
 
     &--visited {
       padding: 0 160px;
+      margin-bottom: 38px;
+    }
+
+    &--bottom {
+      margin-bottom: 58px;
+      margin-top: -11px;
+    }
+  }
+
+  .form__survey {
+    padding-left: 75px;
+
+    &--checkbox {
+      padding-left: 77px;
     }
   }
 
@@ -311,20 +343,22 @@
       justify-content: space-between;
       align-items: flex-start;
       width: 460px;
+      padding-left: 10px;
       margin: 0 auto;
     }
   }
 
   .form__item {
     width: 210px;
-
-    &:last-child {
-      margin-bottom: 24px;
-    }
+    margin-top: 2px;
+    margin-bottom: 31px;
+    margin-left: -3px;
+    margin-right: -7px;
   }
 
   .form__legend {
     display: block;
+    font-size: 14px;
   }
 
   .form__box {
@@ -335,8 +369,8 @@
 
   .form__button {
     max-width: 324px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 13px;
+    padding-right: 27px;
     margin-left: 0;
   }
 
@@ -348,11 +382,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-top: 62px;
+  }
+
   .form__wrapper {
     padding: 0 120px;
   }
 
   .form__border {
+    &--name {
+      margin-right: -1px;
+    }
+
+    &--text {
+      margin-top: 40px;
+    }
+
     &--emotion {
       width: 428px;
 
@@ -375,11 +421,13 @@
   .form__header {
     &--name {
       text-align: left;
+      margin-left: 2px;
     }
 
     &--line {
       width: 100%;
       box-sizing: border-box;
+      margin-bottom: 72px;
 
       &::before,
       &::after {
@@ -389,6 +437,7 @@
 
     &--visited {
       padding: 0 280px;
+      margin-bottom: 38px;
     }
   }
 
@@ -397,6 +446,9 @@
     display: flex;
     align-items: center;
     margin: 0;
+    margin-left: -2px;
+    margin-right: 2px;
+    margin-top: 2px;
 
     &--email {
       width: 480px;
@@ -410,6 +462,10 @@
   }
 
   .form__title {
+    &--position {
+      margin-bottom: -6px;
+    }
+
     &--contact {
       padding-left: 0;
       margin-bottom: 0;
@@ -420,11 +476,51 @@
   .form__list {
     &--bottom {
       width: 100%;
+      margin-left: -9px;
     }
+  }
+
+  .form__item {
+  /*  &--position {
+      margin-left: -17px;
+      margin-right: -23px;
+    }*/
+
+    &:nth-child(2) {
+      margin-left: -17px;
+      margin-right: -23px;
+    }
+
+    &:nth-child(3n),
+    &:nth-child(3n+1) {
+      text-align: right;
+      background-color: @white;
+    }
+
+    &:nth-child(4n)  {
+      margin-right: -2px;
+    }
+
+    &:first-child,
+    &:nth-child(5n) {
+      margin-right: 13px;
+      margin-left: -6px;
+    }
+  }
+
+  .form__survey {
+    margin-left: 4px;
+    margin-top: -1px;
+    margin-right: 7px;
+  }
+
+  .form__text--textarea {
+    margin-top: -15px;
   }
 
   .form__button {
     max-width: 480px;
+    padding-right: 15px;
   }
 
   .form__legend {

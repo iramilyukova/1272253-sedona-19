@@ -1,37 +1,43 @@
 .about {
-  padding: 0;
-  margin: 0;
   position: relative;
-}
 
-.about--sedona {
-  padding-top: 47px;
-  padding-bottom: 49px;
-}
+  &---sedona {
+    padding-top: 42px;
+    padding-bottom: 49px;
+  }
 
-.about--mask::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 38px;
-  left: 0;
-  bottom: -26px;
-  background: url(../img/bg-triangle.svg) no-repeat;
-  background-size: cover;
+  &--mask::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    left: 0;
+    bottom: -38px;
+    background: url(../img/bg-triangle.svg) no-repeat;
+    background-size: cover;
+  }
 }
 
 .about__title {
-  padding: 0;
-  padding-bottom: 40px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   &--sedona {
-    margin: 0 auto;
     width: 85%;
+    padding-top: 40px;
+    margin-bottom: 25px;
   }
 
   &--photo {
     padding-top: 40px;
+  }
+
+  &--big {
+    padding-top: 32px;
+  }
+
+  &--form {
+    padding-top: 0;
   }
 }
 
@@ -44,25 +50,41 @@
 }
 
 .about__text {
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
   color: @black-70;
 
   &--reasons {
-    margin: 0 auto;
-    padding: 0;
-    width: 87%;
+    width: 78%;
+    padding-top: 3px;
+    line-height: 26px;
+    margin-bottom: 6px;
   }
 
   &--btn {
-    padding-bottom: 40px;
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 21px;
   }
 
   &--photo {
-    margin: 0 auto;
     width: 85%;
-    padding-bottom: 30px;
-    margin-top: 0;
+    padding-bottom: 29px;
+    margin-top: -13px;
+    padding-left: 7px;
+    line-height: 23px;
+  }
+
+  &--position {
+    padding-left: 43px;
+    padding-bottom: 37px;
+    margin-top: -15px;
+    line-height: 24px;
+  }
+
+  &--form {
+    width: 86%;
+    margin-top: -14px;
+    line-height: 24px;
   }
 }
 
@@ -80,14 +102,14 @@
 
 .about__map svg {
   position: absolute;
-  padding-left: 150px;
-  padding-top: 157px;
+  padding-left: 145px;
+  padding-top: 165px;
 }
 
 @media (min-width: @tablet-width) {
   .about--sedona {
-    padding-top: 49px;
-    padding-bottom: 58px;
+    padding-top: 8px;
+    margin-bottom: 49px;
   }
 
   .about__mask {
@@ -96,13 +118,20 @@
 
   .about__container {
     margin: 0;
-    padding-top: 48px;
+    padding-top: 67px;
+    padding-bottom: 57px;
   }
 
-  .about__title--sedona {
-    margin: 0 auto;
-    width: 80%;
-    padding-bottom: 56px;
+  .about__title {
+    &--sedona {
+      margin: 0 auto;
+      width: 80%;
+      padding-bottom: 26px;
+    }
+
+    &--form {
+      padding-top: 36px;
+    }
   }
 
   .about--btn {
@@ -114,52 +143,75 @@
     padding-bottom: 0;
   }
 
-  .about__title--big {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 30px;
-    line-height: 26px;
-    padding-top: 34px;
+  .about__title {
+    &--big {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      line-height: 26px;
+      padding-top: 3px;
+      margin-bottom: 32px;
+    }
+
+    &--photo {
+      margin: 0;
+      font-size: 30px;
+      line-height: 26px;
+      padding-top: 75px;
+    }
+
+    &--form {
+      margin: 0;
+      font-size: 30px;
+      line-height: 26px;
+      padding-top: 34px;
+      margin-bottom: 32px;
+    }
   }
 
-  .about__title--photo {
-    font-size: 30px;
-    line-height: 26px;
-    padding-top: 75px;
-  }
+  .about__text {
+    &--btn {
+      margin: 0 auto;
+      width: 397px;
+      padding-left: 38px;
+      margin-bottom: 44px;
+    }
 
-  .about__text--btn {
-    margin: 0 auto;
-    width: 439px;
-    padding-bottom: 47px;
-  }
+    &--photo {
+      margin: 0 auto;
+      width: 57%;
+      margin-top: 32px;
+      padding-bottom: 5px;
+      padding-left: 79px;
+    }
 
-  .about__text--photo {
-    margin: 0 auto;
-    width: 57%;
-    margin-top: 0;
-    padding-bottom: 0;
-  }
+    &--form {
+      margin: 0 auto;
+      width: 57%;
+      border-bottom: none;
+    }
 
-  .about__text--form {
-    margin: 0 auto;
-    width: 57%;
-    border-bottom: none;
-  }
+    &--reasons {
+      padding-left: 110px;
+    }
 
-  .about__text--reasons {
-    padding-left: 10px;
+    &--position {
+      margin: 0 auto;
+      width: 50%;
+      margin-bottom: -3px;
+      padding-bottom: 0;
+    }
   }
 
   .about__map svg {
-    padding-left: 375px;
-    padding-top: 159px;
+    padding-left: 371px;
+    padding-top: 163px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about__container {
-    padding-top: 48px;
+    padding-top: 62px;
     padding-bottom: 66px;
   }
 
@@ -173,49 +225,62 @@
 
     &--sedona {
       margin: 0 auto;
+      padding: 0;
       max-width: 442px;
       width: 50%;
-      padding-top: 50px;
+      padding-top: 41px;
+      padding-left: -12px;
+      margin-bottom: 24px;
     }
 
     &--big {
       text-align: center;
       margin-bottom: 30px;
-      margin-top: 0;
-      padding-top: 58px;
+      padding: 0;
     }
 
     &--photo {
-      padding-top: 75px;
+      padding-top: 112px;
+      margin-bottom: -6px;;
+    }
+
+    &--form {
+      padding-top: 72px;
     }
   }
 
-  .about__text--reasons {
-    margin: 0 auto;
-    padding-bottom: 0;
-  }
+  .about__text {
+    &--reasons {
+      margin: 0 auto;
+      padding-bottom: 3px;
+      width: 602px;
+    }
 
-  .about__text--btn {
-    min-width: 435px;
-    padding-bottom: 55px;
-    margin: 0 auto;
-    width: 78%;
-  }
+    &--btn {
+      width: 396px;
+      margin-bottom: 49px;
+    }
 
-  .about__text--photo {
-    margin: 0 auto;
-    width: 36%;
-    margin-top: 0;
-  }
+    &--photo {
+      margin: 0 auto;
+      width: 36%;
+      padding-left: 74px;
+    }
 
-  .about__text--form {
-    margin: 0 auto;
-    width: 37%;
-    border-bottom: none;
+    &--position {
+      width: 38%;
+      margin-bottom: -4px;
+    }
+
+    &--form {
+      margin: 0 auto;
+      width: 37%;
+      border-bottom: none;
+    }
   }
 
   .about__map svg {
-    padding-left: 526px;
-    padding-top: 144px;
+    padding-left: 587px;
+    padding-top: 160px;
   }
 }

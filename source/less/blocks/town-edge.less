@@ -11,8 +11,8 @@
 
 .town-edge__item {
   position: relative;
-  padding-left: 53px;
-  padding-top: 37px;
+  padding-left: 50px;
+  padding-top: 31px;
   padding-bottom: 0;
 
   &:nth-child(3) {
@@ -24,6 +24,7 @@
   &::before {
     .icon-index();
     background-image: url("../img/icon-house.svg");
+    top: 22px;
   }
 }
 
@@ -31,6 +32,7 @@
   &::before {
     .icon-index();
     background-image: url("../img/icon-gift.svg");
+    top: 18px;
   }
 }
 
@@ -38,13 +40,15 @@
   &::before {
     .icon-index();
     background-image: url("../img/icon-burger.svg");
+    top: 20px;
   }
 }
 
 .town-edge__desc {
   margin: 0 auto;
   width: 95%;
-  padding-top: 25px;
+  padding-top: 14px;
+  padding-right: 10px;
   color: @black-70;
 }
 
@@ -74,34 +78,44 @@
     }
   }
 
-  .town-edge__item--order {
-    order: 1;
-  }
-
   .town-edge__title {
     &--house {
       &::before {
         .icon-index-table();
+        top: 51px;
+        left: 87px;
       }
     }
 
     &--gift {
       &::before {
         .icon-index-table();
+        top: 51px;
+        left: 85px;
       }
     }
 
     &--burger {
       &::before {
         .icon-index-table();
+        top: 54px;
+        left: 89px;
       }
     }
   }
 
   .town-edge__desc {
-    margin: 0 auto;
-    width: 65%;
-    padding-top: 28px;
+    width: 64%;
+    margin-top: 5px;
+    padding-right: 1px;
+
+    &--br {
+      width: 60%;
+    }
+  }
+
+  .town-edge__item--order {
+    order: 1;
   }
 }
 
@@ -109,11 +123,60 @@
   .town-edge__desc {
     margin: 0 auto;
     width: 75%;
-    padding-top: 35px;
+    padding: 0;
+    margin-top: 21px;
+    padding-right: 5px;
 
     &--position {
       margin: 0 auto;
       width: 49%;
+    }
+  }
+
+  .town-edge__title {
+    &--house {
+      &::before {
+        left: 157px;
+      }
+    }
+
+    &--gift {
+      &::before {
+        .icon-index-table();
+        left: 159px;
+        top: 51px;
+      }
+    }
+
+    &--burger {
+      &::before {
+        left: 159px;
+      }
+    }
+  }
+
+  .town-edge__desc {
+    width: 64%;
+    padding: 0;
+    margin-top: 21px;
+    padding-right: 5px;
+
+    &--br {
+      width: 72%;
+      padding-right: 3px;
+    }
+
+    &--position {
+      width: 48%;
+      padding-left: 24px;
+    }
+  }
+
+  .town-edge__item {
+    padding-bottom: 80px;
+
+    &--order {
+      order: 1;
     }
   }
 }

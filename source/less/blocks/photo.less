@@ -17,8 +17,8 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-top: 19px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  margin-bottom: 0;
 }
 
 .photo__src {
@@ -31,10 +31,6 @@
   padding-bottom: 13px;
   margin: 0;
   text-transform: none;
-}
-
-.photo__box svg {
-  fill: @gray-40;
 }
 
 .photo__author-name {
@@ -53,9 +49,16 @@
   display: inline-block;
 }
 
+.photo__box {
+  margin-top: -8px;
+
+  svg {
+    fill: @gray-40;
+  }
+}
+
 .photo__rating {
-  margin-bottom: 20px;
-  padding-left: 12px;
+  padding-left: 10px;
   font-weight: 700;
 }
 
@@ -63,12 +66,12 @@
   .photo {
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 76px;
-    padding-bottom: 66px;
+    padding-top: 64px;
+    padding-bottom: 67px;
   }
 
   .photo__title {
-    padding-bottom: 0;
+    padding-top: 16px;
   }
 
   .photo__wrapper {
@@ -78,6 +81,7 @@
 
   .photo__contener {
     width: 100%;
+    padding: 0;
     box-sizing: border-box;
     background-color: @gray-50;
     padding-left: 20px;
@@ -101,7 +105,8 @@
     margin-left: auto;
     width: 65px;
     min-height: 22px;
-    margin-top: 24px;
+    margin-top: 6px;
+    margin-right: -9px;;
   }
 
   .photo__box svg {
@@ -122,8 +127,18 @@
     }
   }
 
+  .photo__image {
+    display: block;
+    margin-top: -24px;
+    padding: 0;
+
+    &:first-child {
+      margin-top: -22px;
+    }
+  }
+
   .photo__src {
-    padding-top: 0;
+    padding-top: 24px;
   }
 }
 
@@ -135,8 +150,10 @@
   }
 
   .photo__title {
-    padding-bottom: 0;
     color: @white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 2px;
   }
 
   .photo__contener {
@@ -158,10 +175,15 @@
 
   .photo__author {
     color: @white;
+    padding-bottom: 18px;
   }
 
-  .photo__box svg {
-    fill: @white;
+  .photo__box {
+    margin-top: 0;
+
+    svg {
+      fill: @white;
+    }
   }
 
   .photo__rating {
