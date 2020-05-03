@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 27px;
+    height: 26px;
     left: 0;
     bottom: -1px;
     background: url(../img/bg-intro-triangle-mobile.svg) no-repeat;
@@ -31,9 +31,10 @@
 
   &--text {
     position: relative;
-    background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat -230px -225px;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat -227px -237px;
+    background-size: 781px auto;
+    padding-top: 52px;
+    padding-bottom: 66px;
 
     svg {
       width: 230px;
@@ -42,7 +43,6 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: 793px auto;
     }
   }
 }
@@ -50,8 +50,9 @@
 @media (min-width: @tablet-width) {
   .welcome {
     &--index {
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat -68px -26px;
-      padding-top: 75px;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat -13px -4px;
+      background-size: 785px auto;
+      padding-top: 77px;
       padding-bottom: 91px;
 
       svg {
@@ -60,8 +61,8 @@
       }
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/bg-back-tablet@2x.jpg") no-repeat -68px -26px;
-        background-size: 863px auto;
+        background: url("../img/bg-back-tablet@2x.jpg") no-repeat -13px -4px;
+        background-size: 785px auto;
         width: auto;
         margin: 0;
       }
@@ -71,7 +72,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 56px;
+      height: 57px;
       left: 0;
       bottom: -1px;
       background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
@@ -79,10 +80,10 @@
     }
 
     &--text {
-      padding-top: 93px;
+      padding-top: 94px;
       padding-bottom: 115px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat -108px -336px;
-      background-size: 1064px auto;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat -158px -369px;
+      background-size: 1144px auto;
 
       svg {
         width: 463px;
@@ -101,26 +102,27 @@
 @media (min-width: @desktop-width) {
   .welcome {
     &--index {
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat -17px -3px;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat -4px -3px;
+      background-size: 1200px auto;
       width: auto;
       margin: 0;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/bg-back-desktop@2x.jpg") no-repeat -17px -3px;
-        background-size: 1220px auto;
+        background: url("../img/bg-back-desktop@2x.jpg") no-repeat -4px -3px;
+        background-size: 1200px auto;
       }
     }
 
     &--text {
       width: auto;
       margin: 0;
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 -202px;
-      padding-top: 99px;
-      padding-bottom: 120px;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 -217px;
+      background-size: 1200px auto;
+      padding-top: 103px;
+      padding-bottom: 117px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
-        background-size: 1278px auto;
+        background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -213px;
       }
     }
 
@@ -128,7 +130,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 56px;
+      height: 57px;
       left: 0;
       bottom: -1px;
       background: url(../img/bg-intro-triangle-desktop.svg) no-repeat;

@@ -3,12 +3,11 @@
   text-align: center;
   cursor: default;
   color: @white;
-  padding-top: 76px;
-  padding-bottom: 40px;
+  padding-top: 77px;
+  padding-bottom: 42px;
 
   &--order {
-    padding-top: 38px;
-    margin-top: -5px;
+    padding-top: 37px;
   }
 }
 
@@ -37,10 +36,14 @@
   }
 }
 
+.edge__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .edge {
-    padding-top: 45px;
-    padding-bottom: 48px;
+    padding-top: 44px;
+    padding-bottom: 43px;
     width: 33.3%;
 
     &--order {
@@ -61,8 +64,12 @@
   }
 
   .edge__number {
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 21px;
+  }
+
+  .edge__br {
+    display: block;
   }
 }
 
@@ -75,6 +82,11 @@
   .edge__title {
     margin: 0 auto;
     width: 45%;
+  }
+
+  .edge__number {
+    margin-top: 11px;
+    margin-bottom: 22px;
   }
 
   .edge__desc {
