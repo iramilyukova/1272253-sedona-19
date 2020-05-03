@@ -1,68 +1,101 @@
 .about {
-  padding: 0;
-  margin: 0;
   position: relative;
-}
 
-.about--sedona {
-  padding-top: 47px;
-  padding-bottom: 49px;
-}
+  &--photo {
+    margin-top: 32px;
+    padding-bottom: 49px;
+  }
 
-.about--mask::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 38px;
-  left: 0;
-  bottom: -26px;
-  background: url(../img/bg-triangle.svg) no-repeat;
-  background-size: cover;
+  &--mask::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    left: 0;
+    bottom: -43px;
+    background: url(../img/bg-triangle.svg) no-repeat;
+    background-size: cover;
+  }
 }
 
 .about__title {
-  padding: 0;
-  padding-bottom: 40px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   &--sedona {
-    margin: 0 auto;
     width: 85%;
+    padding-top: 40px;
+    margin-bottom: 25px;
   }
 
   &--photo {
-    padding-top: 40px;
+    padding-top: 38px;
+    margin-bottom: 29px;
+  }
+
+  &--big {
+    margin-bottom: 25px;
+  }
+
+  &--form {
+    padding-top: 0;
   }
 }
 
 .about__container {
-  padding-top: 35px;
-  padding-bottom: 48px;
+  padding-top: 24px;
+  padding-bottom: 49px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
 .about__text {
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
   color: @black-70;
+  text-align: center;
+  letter-spacing: 0.1px;
 
   &--reasons {
-    margin: 0 auto;
-    padding: 0;
-    width: 87%;
+    width: 90%;
+    padding-top: 3px;
+    line-height: 26px;
+    margin-bottom: 6px;
   }
 
   &--btn {
-    padding-bottom: 40px;
+    width: 98%;
+    margin: 0;
+    margin-bottom: 34px;
+    padding-left: 3px;
+    padding-right: 1px;
+    line-height: 24px;
   }
 
   &--photo {
+    width: 86%;
+    padding-bottom: 28px;
+    padding-left: 2px;
+    padding-right: 0;
+    line-height: 23px;
+  }
+
+  &--position {
+    width: 80%;
     margin: 0 auto;
-    width: 85%;
-    padding-bottom: 30px;
-    margin-top: 0;
+    padding-left: 6px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 35px;
+    line-height: 24px;
+  }
+
+  &--form {
+    width: 87%;
+    margin: 0 auto;
+    padding-left: 6px;
+    padding-right: 4px;
+    line-height: 24px;
   }
 }
 
@@ -71,7 +104,7 @@
 }
 
 .about__form {
-  padding-top: 40px;
+  padding-top: 39px;
 }
 
 .about__map {
@@ -80,14 +113,30 @@
 
 .about__map svg {
   position: absolute;
-  padding-left: 150px;
-  padding-top: 157px;
+  padding-left: 146px;
+  padding-top: 161px;
+}
+
+.about__br,
+.about__br-photo {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .about--sedona {
-    padding-top: 49px;
-    padding-bottom: 58px;
+  .about {
+    &--sedona {
+      padding-top: 11px;
+      margin-bottom: 49px;
+    }
+
+    &--btn {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &--photo {
+      padding-bottom: 0;
+    }
   }
 
   .about__mask {
@@ -96,75 +145,110 @@
 
   .about__container {
     margin: 0;
-    padding-top: 48px;
+    padding-top: 56px;
+    padding-bottom: 57px;
   }
 
-  .about__title--sedona {
-    margin: 0 auto;
-    width: 80%;
-    padding-bottom: 56px;
-  }
+  .about__title {
+    &--sedona {
+      margin: 0 auto;
+      width: 80%;
+      padding-bottom: 26px;
+    }
 
-  .about--btn {
-    margin: 0 auto;
-    text-align: center;
+    &--big {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+
+    &--photo {
+      margin: 0;
+      font-size: 30px;
+      line-height: 26px;
+      padding-top: 75px;
+    }
+
+    &--form {
+      margin-bottom: 32px;
+    }
   }
 
   .about__form {
     padding-bottom: 0;
-  }
-
-  .about__title--big {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 30px;
-    line-height: 26px;
-    padding-top: 34px;
-  }
-
-  .about__title--photo {
-    font-size: 30px;
-    line-height: 26px;
     padding-top: 75px;
   }
 
-  .about__text--btn {
-    margin: 0 auto;
-    width: 439px;
-    padding-bottom: 47px;
-  }
+  .about__text {
+    &--btn {
+      margin: 0 auto;
+      width: 450px;
+      margin-bottom: 41px;
+    }
 
-  .about__text--photo {
-    margin: 0 auto;
-    width: 57%;
-    margin-top: 0;
-    padding-bottom: 0;
-  }
+    &--photo {
+      margin: 0 auto;
+      width: 92%;
+      margin-top: 32px;
+      padding-left: 0;
+      padding-right: 0;
+    }
 
-  .about__text--form {
-    margin: 0 auto;
-    width: 57%;
-    border-bottom: none;
-  }
+    &--form {
+      margin: 0 auto;
+      border-bottom: none;
+      width: 58%;
+      line-height: 24px;
+      padding-left: 2px;
+      letter-spacing: 0.1px;
+    }
 
-  .about__text--reasons {
-    padding-left: 10px;
+    &--reasons {
+      margin: 0 auto;
+      width: 496px;
+    }
+
+    &--position {
+      margin: 0 auto;
+      padding-bottom: 0;
+      width: 80%;
+      padding-left: 6px;
+      padding-right: 10px;
+    }
   }
 
   .about__map svg {
-    padding-left: 375px;
-    padding-top: 159px;
+    padding-left: 371px;
+    padding-top: 163px;
+  }
+
+  .about__br {
+    display: block;
+  }
+
+  .about__br-photo {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    &--sedona {
+      padding-top: 9px;
+      margin-bottom: 48px;
+    }
+  }
+
   .about__container {
-    padding-top: 48px;
+    padding-top: 62px;
     padding-bottom: 66px;
   }
 
   .about__form {
     padding-bottom: 0;
+    padding-top: 108px;
   }
 
   .about__title {
@@ -172,50 +256,67 @@
     padding-bottom: 39px;
 
     &--sedona {
-      margin: 0 auto;
-      max-width: 442px;
-      width: 50%;
-      padding-top: 50px;
+      padding: 0;
+      padding-top: 42px;
+      margin-bottom: 24px;
     }
 
     &--big {
       text-align: center;
       margin-bottom: 30px;
-      margin-top: 0;
-      padding-top: 58px;
+      padding: 0;
+      letter-spacing: 0.5px;
     }
 
     &--photo {
-      padding-top: 75px;
+      padding-top: 112px;
+      padding-bottom: 34px;
+    }
+
+    &--form {
+      padding-top: 5px;
     }
   }
 
-  .about__text--reasons {
-    margin: 0 auto;
-    padding-bottom: 0;
-  }
+  .about__text {
+    &--reasons {
+      margin: 0 auto;
+      padding-bottom: 3px;
+      width: 496px;
+    }
 
-  .about__text--btn {
-    min-width: 435px;
-    padding-bottom: 55px;
-    margin: 0 auto;
-    width: 78%;
-  }
+    &--btn {
+      margin: 0 auto;
+      width: 95%;
+      padding-left: 10px;
+      padding-right: 4px;
+      letter-spacing: 0.3px;
+      margin-bottom: 48px;
+    }
 
-  .about__text--photo {
-    margin: 0 auto;
-    width: 36%;
-    margin-top: 0;
-  }
+    &--photo {
+      margin: 0 auto;
+      width: 92%;
+      padding-left: 12px;
+      padding-right: 11px;
+      letter-spacing: 0.1px;
+    }
 
-  .about__text--form {
-    margin: 0 auto;
-    width: 37%;
-    border-bottom: none;
+    &--position {
+      width: 38%;
+    }
+
+    &--form {
+      margin: 0 auto;
+      width: 454px;
+      letter-spacing: 0.2px;
+      border-bottom: none;
+      text-align: center;
+    }
   }
 
   .about__map svg {
-    padding-left: 526px;
-    padding-top: 144px;
+    padding-left: 586px;
+    padding-top: 161px;
   }
 }

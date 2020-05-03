@@ -4,8 +4,6 @@
 }
 
 .reason__item {
-  text-align: center;
-  width: 100%;
   cursor: default;
   margin: 0;
   display: flex;
@@ -14,7 +12,7 @@
 
 .reason__image {
   width: 320px;
-  height: 261px;
+  height: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,16 +20,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    line-height: 20px;
   }
 
   .reason__image {
     width: 100%;
-    height: 255px;
+    height: 257px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .reason__item {
+    flex-wrap: wrap;
+  }
+
   .reason__image {
-    height: 257px;
+    width: 100%;
+    height: 256px;
   }
 }

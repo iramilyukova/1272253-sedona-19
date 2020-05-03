@@ -11,8 +11,8 @@
 }
 
 .attractions__item {
-  padding-top: 43px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   border-bottom: 1px solid @gray-80;
 
   &:last-child {
@@ -25,13 +25,14 @@
   color: @black-100;
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .attractions__number {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   padding-left: 0;
+  margin-top: 3px;
   color: @black-100;
   margin: 0;
 }
@@ -40,6 +41,11 @@
   margin: 0 auto;
   width: 77%;
   color: @black-70;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 1px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -52,8 +58,8 @@
     text-align: center;
     padding-left: 0;
     border-bottom: none;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 44px;
+    padding-bottom: 43px;
   }
 
   .attractions__title {
@@ -63,10 +69,10 @@
 
   .attractions__number {
     display: block;
+    padding: 0;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 0;
+    margin-bottom: 22px;
+    margin-top: 10px;
   }
 
   .attractions__desc {
@@ -84,10 +90,16 @@
   .attractions__title {
     margin: 0 auto;
     width: 35%;
+    padding-top: 8px;
   }
 
   .attractions__item {
-    padding-bottom: 70px;
+    padding-bottom: 59px;
+    padding-top: 36px;
+  }
+
+  .attractions__number {
+    margin-top: 11px;
   }
 
   .attractions__desc {

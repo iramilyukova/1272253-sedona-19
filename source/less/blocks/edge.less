@@ -3,20 +3,25 @@
   text-align: center;
   cursor: default;
   color: @white;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 77px;
+  padding-bottom: 42px;
+
+  &--order {
+    padding-top: 37px;
+  }
 }
 
 .edge__title {
   color: @white;
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .edge__number {
   display: block;
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
   color: @white;
 }
 
@@ -27,30 +32,70 @@
 
   &--whidth {
     margin: 0 auto;
-    width: 67%;
+    width: 81%;
   }
+}
+
+.edge__br {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .edge {
-    padding-top: 45px;
-    padding-bottom: 48;
+    padding-top: 44px;
+    padding-bottom: 43px;
+    width: 33.3%;
+
+    &--order {
+      order: 1;
+      margin-top: 0;
+    }
   }
 
-  .edge--order {
-    order: 1;
+  .edge__title {
+    margin: 0 auto;
+    width: 83%;
   }
 
   .edge__desc {
     color: @white;
     margin: 0 auto;
-    width: 47%;
+    width: 63%;
+  }
+
+  .edge__number {
+    margin-top: 12px;
+    margin-bottom: 21px;
+  }
+
+  .edge__br {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .edge {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 60px;
+  }
+
+  .edge__title {
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .edge__number {
+    margin-top: 11px;
+    margin-bottom: 22px;
+  }
+
+  .edge__desc {
+    margin: 0 auto;
+    width: 70%;
+
+    &--whidth {
+      margin: 0 auto;
+      width: 58%;
+    }
   }
 }
