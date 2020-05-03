@@ -10,7 +10,7 @@
   }
 
   &--text {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
 
   &--bottom {
@@ -21,17 +21,20 @@
 .form__border {
   border-top: 1px solid @gray-150;
   padding-top: 20px;
-  margin-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
 
   &--name {
-    margin-top: 14px;
+    margin-top: 16px;
+  }
+
+  &--contacts {
+    margin-top: 22px;
   }
 
   &--emotion {
-    margin-bottom: 26px;
-    margin-top: 25px;
+    margin-bottom: 27px;
+    margin-top: 27px;
   }
 
   &--bottom {
@@ -318,7 +321,7 @@
 
     &--visited {
       padding: 0 160px;
-      margin-bottom: 37px;
+      margin-bottom: 40px;
     }
 
     &--bottom {
@@ -334,17 +337,26 @@
 
   .form__title {
     &--contact {
-      padding-left: 17px;
-      margin-bottom: 6px;
+      padding-left: 19px;
+      margin-bottom: 5px;
     }
   }
 
   .form__survey {
     &--checkbox {
       padding-left: 75px;
-      padding-top: 2px;
-      margin-left: 2px;
-      margin-bottom: 1px;
+      padding-top: 1px;
+      margin-left: 7px;
+      margin-bottom: 0;
+
+      &::before {
+        left: -3px;
+      }
+
+      &::after {
+        top: 0;
+        left: -3px;
+      }
     }
 
     &--posit {
@@ -393,14 +405,14 @@
 
   .form__button {
     max-width: 327px;
-    padding-left: 11px;
+    padding-left: 13px;
     padding-right: 25px;
     margin-left: 0;
   }
 
   .form__text {
     &--textarea {
-      margin-bottom: 58px;
+      margin-bottom: 61px;
       padding-top: 13px;
       padding-left: 18px;
     }
@@ -467,7 +479,7 @@
     }
 
     &--text {
-      margin-bottom: 60px;
+      margin-bottom: 58px;
     }
 
     &--line {
@@ -483,7 +495,7 @@
 
     &--visited {
       padding: 0 280px;
-      margin-bottom: 35px;
+      margin-bottom: 37px;
     }
   }
 
@@ -515,8 +527,17 @@
   }
 
   .form__text {
+    padding-left: 16px;
+
     &--small {
       max-width: 315px;
+    }
+
+    &--textarea {
+      padding-top: 11px;
+      margin-bottom: 56px;
+      padding-left: 18px;
+      height: 160px;
     }
   }
 
@@ -554,15 +575,14 @@
 
   .form__survey {
     margin-right: 2px;
-    margin-left: 6px;
-    white-space: nowrap;
+    margin-left: 3px;
 
     &--position {
       margin-left: 5px;
     }
 
     &--posit {
-      margin-left: 6px;
+      margin-left: 5px;
     }
 
     &--last {
@@ -575,20 +595,9 @@
     margin-bottom: 38px;
   }
 
-  .form__text {
-    padding-left: 16px;
-
-    &--textarea {
-      padding-top: 10px;
-      margin-bottom: 56px;
-      padding-left: 18px;
-      height: 160px;
-    }
-  }
-
   .form__button {
     max-width: 480px;
-    padding-right: 4px;
+    padding-right: 14px;
   }
 
   .form__legend {
