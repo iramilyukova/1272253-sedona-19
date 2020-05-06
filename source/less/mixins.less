@@ -27,7 +27,34 @@
 .icon-video() {
   border: none;
   background-color: transparent;
-  fill: @black-200;
   cursor: pointer;
   outline: none;
+}
+
+.video-button-icon() {
+  & svg{
+    fill: @black-200;
+  }
+
+  &:hover svg {
+    fill: @black-70;
+  }
+
+  &:active svg {
+    fill: @gray-70;
+  }
+}
+
+.video-button-icons() {
+  & svg{
+    fill: @white;
+  }
+
+  &:hover svg {
+    fill: @gray-65;
+  }
+
+  &:active svg {
+    fill: @gray-75;
+  }
 }
