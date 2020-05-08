@@ -217,10 +217,18 @@
 
 .form__button {
   width: 100%;
+
+  &--show {
+    display: none;
+  }
 }
 
 .form__legend {
   display: none;
+}
+
+.form__field-error {
+  border: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {

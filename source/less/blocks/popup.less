@@ -22,9 +22,9 @@
 }
 
 .popup__title {
-  font-weight: 18px;
+  margin: 0;
+  font-size: 18px;
   line-height: 26px;
-  margin-bottom: 38px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -51,8 +51,58 @@
 
   &--success {
     margin-left: 20px;
-    margin-right: 20px;
     padding-left: 65px;
     padding-right: 65px;
+  }
+
+  .popup__br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    &--success {
+      width: 645px;
+      padding-top: 60px;
+      padding-bottom: 47px;
+    }
+
+    &--error {
+      width: 400px;
+      padding-top: 65px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .popup__text {
+    margin-bottom: 40px;
+  }
+
+  .popup__box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .popup__btn {
+    padding-left: 123px;
+    padding-right: 125px;
+    margin-left: 64px;
+
+    &--success {
+      margin-left: 94px;
+      padding-left: 152px;
+      padding-right: 155px;
+    }
+  }
+
+  .popup__br {
+    display: block;
   }
 }
