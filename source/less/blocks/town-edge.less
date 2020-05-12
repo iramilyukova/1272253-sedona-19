@@ -46,7 +46,6 @@
 }
 
 .town-edge__title--burger {
-
   &::before {
     .icon-index();
     background-image: url("../img/icon-burger.svg");
@@ -63,7 +62,7 @@
   color: @black-70;
 }
 
-.town-edge-br {
+.town-edge__br {
   display: none;
 }
 
@@ -128,6 +127,14 @@
     &--br {
       width: 60%;
     }
+
+    &position {
+      width: 60%;
+    }
+  }
+
+  .town-edge__br {
+    display: block;
   }
 
   .town-edge__item--order {
@@ -142,19 +149,6 @@
 
     &--order {
       order: 1;
-    }
-  }
-
-  .town-edge__desc {
-    margin: 0 auto;
-    width: 75%;
-    padding: 0;
-    margin-top: 22px;
-    padding-right: 5px;
-
-    &--position {
-      margin: 0 auto;
-      width: 49%;
     }
   }
 
@@ -183,8 +177,8 @@
   }
 
   .town-edge__desc {
-    width: 64%;
-    padding: 0 3px 0px 3px;
+    width: 65%;
+    padding: 0 3px 0 3px;
     margin-top: 21px;
 
     &--br {
@@ -193,12 +187,8 @@
     }
 
     &--position {
-      width: 60%;
+      width: 70%;
       padding-left: 2px;
     }
-  }
-
-  .town-edge-br {
-    display: block;
   }
 }
