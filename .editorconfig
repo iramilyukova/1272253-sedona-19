@@ -26,7 +26,7 @@ indent_style = ignore
 trim_trailing_whitespace = false
 insert_final_newline = ignore
 
-[*.min*]
+[*.min.*]
 indent_style = ignore
 trim_trailing_whitespace = false
 insert_final_newline = ignore

@@ -1,114 +1,156 @@
-"use strict";
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-rename");
-var server = require("browser-sync").create();
-var less = require("gulp-less");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
-var htmlmin = require('gulp-htmlmin');
-var include = require("posthtml-include");
-var del = require("del");
-var uglify = require("gulp-uglify");
+var navMain = document.querySelector(".main-nav");
+var navButtonClose = document.querySelector(".main-nav__toggle");
+var navButtonOpen = document.querySelector(".main-nav__menu");
 
-gulp.task("css", function () {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+navMain.classList.remove("main-nav--nojs");
+
+navButtonClose.addEventListener("click", function () {
+  if (navMain.classList.contains("main-nav--opened")) {
+    navMain.classList.remove("main-nav--opened");
+    navMain.classList.add("main-nav--closed");
+  }
 });
 
-gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+navButtonOpen.addEventListener("click", function () {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
+  }
 });
 
-gulp.task("html", function() {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([include()]))
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+var popupSuccess = document.querySelector(".popup__success");
+var popupError = document.querySelector(".popup__error");
+
+var isFormDirty = false;
+var isFormValid = false;
+
+function getInputElements(formElement) {
+  var inputElements = [];
+
+  var nameElement = formElement.querySelector("input[name=name]");
+
+  if (nameElement) {
+    inputElements.push(nameElement);
+  }
+
+  var surnameElement = formElement.querySelector("input[name=surname]");
+
+  if (surnameElement) {
+    inputElements.push(surnameElement);
+  }
+
+  var patronymicElement = formElement.querySelector("input[name=patronymic]");
+
+  if (patronymicElement) {
+    inputElements.push(patronymicElement);
+  }
+
+  var phoneElement = formElement.querySelector("input[name=phone]");
+
+  if (phoneElement) {
+    inputElements.push(phoneElement);
+  }
+
+  var emailElement = formElement.querySelector("input[name=email]");
+
+  if (emailElement) {
+    inputElements.push(emailElement);
+  }
+
+  return inputElements;
+}
+
+function updateFormValidation(inputElements) {
+  isFormValid = true;
+  for (var i = 0; i < inputElements.length; i++) {
+    var inputElement = inputElements[i];
+    updateElemtnValidation(inputElement);
+  }
+}
+
+function updateElemtnValidation(element) {
+  if (element.value === "") {
+    isFormValid = false;
+    element.classList.add("form__field-error");
+  }
+  else {
+    element.classList.remove("form__field-error");
+  }
+}
+
+function initFormEvents(formElement, inputElements) {
+  var inputElements = getInputElements(formElement);
+
+  var inputElementNames = [];
+
+  for (var i = 0; i < inputElements.length; i++) {
+    var inputElement = inputElements[i];
+    inputElementNames.push(inputElement.name);
+  }
+
+  formElement.addEventListener("input", function (evt) {
+    if (isFormDirty && inputElementNames.entries(evt.target.name)) {
+      updateFormValidation(inputElements);
+    }
   });
 
-gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{gif,png,jpg,svg,webp}")
-    .pipe(imagemin([
-      imagemin.Optipng({optimizationLevel:3}),
-      imagemin.jpegtran({progressive:true}),
-      imagemin.svgo()
-    ]))
-});
+  var formButton = formElement.querySelector(".form__button");
 
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{gif,png,jpg,svg,webp}")
-    .pipe(webp({guality:90}))
-    .pipe(gulp.dest("build/img"));
-});
+  formButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
 
-gulp.task("gulp-uglify", function(){
-  gulp.src("js/*.js")
-  .pipe(uglify())
-  .pipe(gulp.dest("build/js"))
-});
+    isFormDirty = true;
+    updateFormValidation(inputElements);
 
-gulp.task("clean", function () {
-  return del("build");
-});
+    if (isFormValid) {
+      popupSuccess.classList.add("popup__success--active");
+    }
+    else {
+      popupError.classList.add("popup__error--active");
+    }
+  });
+}
 
-gulp.task("copy", function () {
-  return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
-});
+function initForm() {
+  var formElement = document.querySelector(".form");
 
-gulp.task("server", function () {
-  server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+  if (!formElement) {
+    return;
+  }
+
+  initFormEvents(formElement);
+}
+
+function initPopupEvents(popupSuccess, popupError) {
+
+  var closePopupSuccessButton = popupSuccess.querySelector(".popup__btn--success");
+  var closePopupErrorButton = popupError.querySelector(".popup__btn");
+
+  closePopupSuccessButton.addEventListener("click", function () {
+    popupSuccess.classList.remove("popup__success--active");
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
-});
+  closePopupErrorButton.addEventListener("click", function () {
+    popupError.classList.remove("popup__error--active");
+  });
 
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popupSuccess.classList.contains("popup__success--active")) {
+        popupSuccess.classList.remove("popup__success--active")
+      }
+      if (popupError.classList.contains("popup__error--active")) {
+        popupError.classList.remove("popup__error--active")
+      }
+    }
+  });
+}
 
-gulp.task("build", gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "html"
-));
+function initPopups(){
+  if(popupSuccess && popupError){
+    initPopupEvents(popupSuccess, popupError);
+  }
+}
 
-gulp.task("start", gulp.series("build", "server"));
+initForm();
+initPopups();
