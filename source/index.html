@@ -8,21 +8,21 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <script src="./js/picturefill.js"></script>
-    <script src="./js/svg4everybody.js"></script>
+    <script src="./js/picturefill.min.js"></script>
+    <script src="./js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
           </picture>
         </a>
-        <nav class="main-nav  main-nav--opened  main-nav--nojs">
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Закрыть окно">
             <svg width="22" height="22" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-cross"></use>
@@ -58,7 +58,6 @@
           <svg width="280" height="213" aria-label="Привествуем вас на сайте Седоны">
             <use xlink:href="img/sprite.svg#icon-text-sedona-index"></use>
           </svg>
-          </p>
         </section>
         <section class="about  about--sedona about--mask">
           <h2 class="title  about__title  about__title--sedona">Седона &mdash; небольшой городок в Аризоне,<br class="about__br"> заслуживающий большего!</h2>
@@ -73,14 +72,16 @@
                 <p class="edge__number">&mdash; №1 &mdash;</p>
                 <p class="edge__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                <img class="reason__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото Седоны">
-              </picture>
+              <div class="reason__wrapper">
+                <picture class="reason__picture">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="reason__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото Седоны">
+                </picture>
+              </div>
             </li>
             <li>
               <h2 class="visually-hidden">Сервис Седоны</h2>
@@ -91,7 +92,7 @@
                 </li>
                 <li class="town-edge__item  town-edge__item--order">
                   <p class="title  title--left  town-edge__title  town-edge__title--gift">Сувениры</p>
-                  <p class="town-edge__desc  town-edge__desc--position">Не только китайского,<br class="town-edge-br"> но и местного производства!</p>
+                  <p class="town-edge__desc  town-edge__desc--position">Не только китайского, <br class="town-edge__br"> но и местного производства!</p>
                 </li>
                 <li class="town-edge__item">
                   <p class="title  title--left  town-edge__title  town-edge__title--burger">Еда</p>
@@ -105,14 +106,16 @@
                 <p class="edge__number">&mdash; №2 &mdash;</p>
                 <p class="edge__desc  edge__desc--whidth">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-                <img class="reason__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
-              </picture>
+              <div class="reason__wrapper">
+                <picture class="reason__picture">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="reason__image  reason__image--top" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
+                </picture>
+              </div>
             </li>
             <li>
               <h2 class="visually-hidden">Сервис Седоны</h2>
@@ -145,7 +148,7 @@
         <section class="about  about__btn">
           <div class="about__container">
             <h2 class="title  title--big">Заинтересовались?</h2>
-            <p class="about__text  about__text--btn">Укажите предполагаемые даты поездки, <br class="about__br">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="about__text  about__text--btn">Укажите предполагаемые даты поездки, <br class="about__br  about__br--br">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="btn  about__button" href="search.html">Найти гостиницу</a>
           </div>
           <div class="about__map">
@@ -153,14 +156,15 @@
               <use xlink:href="img/sprite.svg#icon-map-marker"></use>
             </svg>
             <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-            <picture>
+            <picture class="about__picture">
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на Карте">
+              <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на Карте">
             </picture>
+            <iframe class="about__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176173.9221157251!2d-111.98794131029544!3d34.86750077553685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1584036020250!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </section>
       </main>
@@ -193,7 +197,7 @@
             </ul>
           </div>
           <div class="page-footer__copyright  page-footer__copyright--index">
-            <b>Разработано</b>
+            <b class="page-footer__weight">Разработано</b>
             <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               <svg width="28" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>

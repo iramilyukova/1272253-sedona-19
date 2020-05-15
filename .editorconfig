@@ -20,3 +20,13 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.svg]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore
+
+[*.min.*]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore

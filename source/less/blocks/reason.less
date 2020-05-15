@@ -8,6 +8,11 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  background-color: @blue-50;
+}
+
+.reason__wrapper {
+  overflow: hidden;
 }
 
 .reason__image {
@@ -24,8 +29,9 @@
   }
 
   .reason__image {
-    width: 100%;
-    height: 257px;
+    max-width: 100%;
+    width: 513px;
+    height: 258px;
   }
 }
 
@@ -35,7 +41,16 @@
   }
 
   .reason__image {
-    width: 100%;
-    height: 256px;
+    width: 800px;
+    height: 400px;
+    margin-top: -71px;
+
+    &--top {
+      margin-top: -75px;
+    }
+  }
+
+  .reason__wrapper {
+    height: 257px;
   }
 }

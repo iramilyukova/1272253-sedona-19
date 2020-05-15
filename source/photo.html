@@ -8,26 +8,25 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <script src="./js/picturefill.js"></script>
-    <script src="./js/svg4everybody.js"></script>
+    <script src="./js/picturefill.min.js"></script>
+    <script src="./js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="103" height="82" alt="Логотип «Седона»">
           </picture>
         </a>
-        <nav class="main-nav  main-nav--opened  main-nav--nojs">
+        <nav class="main-nav  main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Закрыть окно">
             <svg width="22" height="22" aria-hidden="true" focusable="false">
               <use xlink:href="img/sprite.svg#icon-cross"></use>
             </svg>
-          </button>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -64,7 +63,7 @@
         </section>
         <section class="about">
           <h2 class="title  about__title  about__title--photo">Фото и видео</h2>
-          <p class="about__text  about__text--photo">Не можете решиться на путешествие из-за курса?<br class="about__br-photo"> Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="about__text  about__text--photo">Не можете решиться на путешествие из-за курса?<br class="about__br-photo"> Фотографии помогут<br class="about__br-photo-2"> вам забыть о политике и экономике.</p>
         </section>
         <section class="photo">
           <h2 class="visually-hidden">Фотографии природы</h2>
@@ -258,7 +257,7 @@
             </ul>
           </div>
           <div class="page-footer__copyright  page-footer__copyright--position  page-footer__copyright--photo">
-            <b>Разработано</b>
+            <b class="page-footer__weight">Разработано</b>
             <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               <svg width="28" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
