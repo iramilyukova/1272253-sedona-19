@@ -30,25 +30,15 @@
   }
 
   &--text {
-    position: relative;
-    background: @blue-25 url("../img/bg-back-mobile@1x.jpg") no-repeat -227px -237px;
-    background-size: 781px auto;
+    .welcome-text-1();
     padding-top: 39px;
     padding-bottom: 51px;
-
-    svg {
-      width: 230px;
-      height: 40px;
-    }
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
   }
 
   &--text-form {
+    .welcome-text-1();
     padding-top: 53px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
   }
 }
 
@@ -85,21 +75,15 @@
     }
 
     &--text {
+      .welcome-text-2();
       padding-top: 80px;
       padding-bottom: 102px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat -158px -369px;
-      background-size: 1144px auto;
+    }
 
-      svg {
-        width: 463px;
-        height: 80px;
-        padding-left: 3px;
-      }
-
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/bg-back-tablet@2x.jpg") no-repeat -108px -336px;
-        background-size: 1064px auto;
-      }
+    &--text-form {
+      .welcome-text-2();
+      padding-top: 94px;
+      padding-bottom: 115px;
     }
   }
 }
@@ -119,16 +103,15 @@
     }
 
     &--text {
-      width: auto;
-      margin: 0;
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 -217px;
-      background-size: 1208px auto;
+      .welcome-text-3();
       padding-top: 88px;
       padding-bottom: 104px;
+    }
 
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg") no-repeat 0 -213px;
-      }
+    &--text-form {
+      .welcome-text-3();
+      padding-top: 102px;
+      padding-bottom: 120px;
     }
 
     &--mask::before {
